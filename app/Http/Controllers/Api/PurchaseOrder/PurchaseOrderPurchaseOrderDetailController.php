@@ -40,9 +40,16 @@ class PurchaseOrderPurchaseOrderDetailController extends Controller
      */
     public function store(Request $request, PurchaseOrder $purchaseOrder)
     {
-        $product = Product::find($request->product_id);
+        if ($request->has('control_engagement')){
+            $product = Product::find($request->product_id);
+            $newDetail = [
+                "quantity" => 1
+            ];
+        }else{
+            $product = Product::find($request->product_id);
+            $newDetail = $request->all();
+        }
 
-        $newDetail = $request->all();
         $newDetail['tax_percentage'] = $product->tax_percentage;
         $newDetail['value'] = $product->value;
 

@@ -1155,9 +1155,9 @@
                                     'total_value': 0
                                 }, _engagement_id).done(function (response) {
                                     let _purchase_order_id = response.id;
-
+                                    
                                     createPurchaseOrderDetail({
-
+                                        'control_engagement': true
                                     }, _purchase_order_id);
                                 });
                             });
@@ -1292,6 +1292,13 @@
             function createPurchaseOrder(params = null, engagement_id) {
                 let url = '{{ route("api.engagements.purchase_orders.store", [":engagement_id"]) }}';
                 url = url.replace(':engagement_id', engagement_id);
+
+                return $.post(url, params);
+            }
+
+            function createPurchaseOrderDetail(params = null, purchase_order_id) {
+                let url = '{{ route("api.purchase_orders.detail.store", [":purchase_order_id"]) }}';
+                url = url.replace(':purchase_order_id', purchase_order_id);
 
                 return $.post(url, params);
             }
