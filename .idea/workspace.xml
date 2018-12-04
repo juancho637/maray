@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b7b9d3b-f187-419f-b1b3-a50ecb95a897" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_325042_create_formula_details_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_325042_create_formula_details_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/histories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/histories/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php" afterDir="false" />
     </list>
@@ -109,7 +110,7 @@
           <entry key="Blade" value="247" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="544" />
+          <entry key="PHP" value="548" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -124,9 +125,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="5" />
-          <entry key="Blade" value="12219" />
+          <entry key="Blade" value="12249" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="7424" />
+          <entry key="PHP" value="7436" />
           <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
@@ -134,11 +135,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="1420" column="54" lean-forward="true" selection-start-line="1420" selection-start-column="54" selection-end-line="1420" selection-end-column="54" />
+            <state relative-caret-position="322">
+              <caret line="1419" column="13" selection-start-line="1419" selection-start-column="13" selection-end-line="1419" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_06_325042_create_formula_details_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -147,7 +157,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+              <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -155,8 +165,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="1384" column="62" selection-start-line="1384" selection-start-column="55" selection-end-line="1384" selection-end-column="62" />
+            <state relative-caret-position="333">
+              <caret line="1385" column="16" selection-start-line="1385" selection-start-column="16" selection-end-line="1385" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -172,10 +182,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dd(</find>
-      <find>credit</find>
-      <find>totalBalance</find>
-      <find>$purchaseOrderFields['totalBalance'] -= $purchaseOrderFields['deposit'];</find>
       <find>pets.map((pet)=&gt;{</find>
       <find>client_id</find>
       <find>pet_id</find>
@@ -202,6 +208,10 @@
       <find>formula_detail_product_id</find>
       <find>$('#formula_detail_presentation').val(&quot;</find>
       <find>create-formula-detail</find>
+      <find>presentac</find>
+      <find>presentacion</find>
+      <find>rese</find>
+      <find>reset</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,7 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ExpenseController.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DataTable/AreaController.php" />
         <option value="$PROJECT_DIR$/app/State.php" />
@@ -261,6 +270,7 @@
         <option value="$PROJECT_DIR$/resources/views/admin/clients/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/histories/create.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_02_06_325042_create_formula_details_table.php" />
       </list>
     </option>
   </component>
@@ -456,6 +466,17 @@
               <item name="maray" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maray" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maray" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maray" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maray" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="maray" type="b2602c69:ProjectViewProjectNode" />
@@ -693,12 +714,12 @@
       <workItem from="1543498452351" duration="12996000" />
       <workItem from="1543763924371" duration="765000" />
       <workItem from="1543766165045" duration="14334000" />
-      <workItem from="1543928518548" duration="1327000" />
+      <workItem from="1543928518548" duration="2266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="582081000" />
+    <option name="totallyTimeSpent" value="583020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -766,34 +787,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DataTable/AreaCategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/categories/partials/actions.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/areas/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-436">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/categories/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1093,21 +1086,41 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="1384" column="62" selection-start-line="1384" selection-start-column="55" selection-end-line="1384" selection-end-column="62" />
+        <state relative-caret-position="333">
+          <caret line="1385" column="16" selection-start-line="1385" selection-start-column="16" selection-end-line="1385" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="1420" column="54" lean-forward="true" selection-start-line="1420" selection-start-column="54" selection-end-line="1420" selection-end-column="54" />
+        <state relative-caret-position="322">
+          <caret line="1419" column="13" selection-start-line="1419" selection-start-column="13" selection-end-line="1419" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_06_325043_create_history_engagements_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_07_150137_create_quotations_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_07_152550_create_purchase_orders_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_06_325042_create_formula_details_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

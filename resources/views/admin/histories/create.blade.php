@@ -680,6 +680,7 @@
                             <div class="form-group">
                                 <label for="formula_detail_presentation">Presentación:</label>
                                 <select class="form-control select2" id="formula_detail_presentation">
+                                    <option value="">Selecciona una presentación</option>
                                     <option value="cápsula">Cápsula</option>
                                     <option value="comprimido">Comprimido</option>
                                     <option value="crema">Crema</option>
@@ -1412,7 +1413,7 @@
             function resetFormFormulaDetail(view) {
                 $('#formula_detail_id').val("");
                 $('#formula_detail_product_id').val(null).trigger('change');
-                $('#formula_detail_presentation').val("cápsula");
+                $('#formula_detail_presentation').val("").change();
                 $('#formula_detail_quantity').val(1);
                 $('#formula_detail_indications').val("");
                 $('#table-formula').html(view);

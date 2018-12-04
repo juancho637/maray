@@ -17,7 +17,7 @@ class CreateFormulaDetailsTable extends Migration
             $table->increments('id');
             $table->integer('formula_id')->unsigned();
             $table->integer('product_id')->unsigned();
-            $table->string('presentation');
+            $table->string('presentation')->nullable();
             $table->integer('quantity');
             $table->mediumText('recommendation');
             $table->timestamps();
