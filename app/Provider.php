@@ -38,4 +38,12 @@ class Provider extends Model
     public function state(){
         return $this->belongsTo(State::class);
     }
+
+    public function getNameAttribute($name){
+        return ucfirst(strtolower($name));
+    }
+
+    public function setNameAttribute($name){
+        $this->attributes['name'] =  strtolower($name);
+    }
 }

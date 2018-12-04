@@ -18,13 +18,20 @@ class CreatePurchaseOrdersTable extends Migration
             $table->integer('client_id')->unsigned();
             $table->integer('user_id')->unsigned();
             $table->integer('balance_id')->unsigned()->nullable();
-            $table->integer('pet_id')->unsigned();
-            $table->integer('engagement_id')->unsigned();
+            $table->integer('pet_id')->unsigned()->nullable();
+            $table->integer('engagement_id')->unsigned()->nullable();
             $table->integer('state_id')->unsigned()->default(1);
             $table->integer('consecutive')->nullable();
-            $table->double('subtotal');
-            $table->double('taxes');
-            $table->double('total_value');
+            $table->timestamp('expires')->nullable();
+            $table->enum('type', ['quotation', 'purchaseOrder', 'invoice'])->nullable();
+            $table->integer('cash')->default(0);
+            $table->integer('cheque')->default(0);
+            $table->integer('card')->default(0);
+            $table->integer('credit')->default(0);
+            $table->integer('deposit')->default(0);
+            $table->double('subtotal')->default(0);
+            $table->double('taxes')->default(0);
+            $table->double('total_value')->default(0);
             $table->softDeletes();
             $table->timestamps();
 

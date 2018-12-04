@@ -1,8 +1,8 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Especies/Razas')
+@section('title', config('app.name').' | Especies y razas')
 
-@section('header', 'Especies/Razas')
+@section('header', 'Especies y razas')
 
 @section('description', 'Visualizar especie')
 
@@ -22,10 +22,10 @@
                         <textarea class="form-control" disabled>{{ $species->description }}</textarea>
                     </div>
                 </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="form-group">
-                    <a href="{{ route('species.edit', $species) }}" class="btn btn-warning btn-block">Editar especie</a>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <a href="{{ route('species.edit', $species) }}" class="btn btn-warning btn-block">Editar especie</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -18,8 +18,9 @@
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <!-- Messages: style can be found in dropdown.less-->
+
+                {{--
                 <li class="dropdown messages-menu">
-                    <!-- Menu toggle button -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-envelope-o"></i>
                         <span class="label label-success">4</span>
@@ -124,6 +125,7 @@
                         </li>
                     </ul>
                 </li>
+                --}}
                 <!-- User Account Menu -->
                 <li class="dropdown user user-menu">
                     <!-- Menu Toggle Button -->
@@ -179,11 +181,11 @@
                     </ul>
                 </li>
                 <!-- Control Sidebar Toggle Button -->
-                <li>
+                <!-- <li>
                     <a href="#" data-toggle="control-sidebar" role="button">
                         <i class="fa fa-gears"></i>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </nav>

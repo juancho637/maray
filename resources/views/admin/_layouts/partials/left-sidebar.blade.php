@@ -35,20 +35,23 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li {{ request()->is('finances/invoices*') ? 'class=active' : '' }}>
-                        <a href="{{ route('invoices.index') }}">Facturas</a>
+                    <li {{ request()->is('finances/balances*') ? 'class=active' : '' }}>
+                        <a href="{{ route('balances.index') }}">Cajas</a>
+                    </li>
+                    <li {{ request()->is('finances/purchaseOrders*') ? 'class=active' : '' }}>
+                        <a href="{{ route('purchaseOrders.index') }}">Ordenes y cotizaciones</a>
                     </li>
                     <li {{ request()->is('finances/deposits*') ? 'class=active' : '' }}>
-                        <a href="{{ route('deposits.index') }}">Depositos</a>
+                        <a href="{{ route('deposits.index') }}">Depósitos</a>
                     </li>
-                    <li {{ request()->is('finances/quotations*') ? 'class=active' : '' }}>
+                    {{--<li {{ request()->is('finances/quotations*') ? 'class=active' : '' }}>
                         <a href="{{ route('quotations.index') }}">Cotizaciones</a>
-                    </li>
+                    </li>--}}
                     <li {{ request()->is('finances/credits*') ? 'class=active' : '' }}>
                         <a href="{{ route('credits.index') }}">Pago de créditos</a>
                     </li>
                     <li {{ request()->is('finances/expenses*') ? 'class=active' : '' }}>
-                        <a href="{{ route('expenses.index') }}">Gastos/Egresos</a>
+                        <a href="{{ route('expenses.index') }}">Gastos</a>
                     </li>
                 </ul>
             </li>
@@ -79,19 +82,22 @@
                 </a>
                 <ul class="treeview-menu">
                     <li {{ request()->is('admin/species*') ? 'class=active' : '' }}>
-                        <a href="{{ route('species.index') }}">Especies/Razas</a>
+                        <a href="{{ route('species.index') }}">Especies y razas</a>
                     </li>
                     <li {{ request()->is('admin/clients*') ? 'class=active' : '' }}>
-                        <a href="{{ route('clients.index') }}">Clientes/Mascotas</a>
+                        <a href="{{ route('clients.index') }}">Clientes y mascotas</a>
                     </li>
                     <li {{ request()->is('admin/providers*') ? 'class=active' : '' }}>
                         <a href="{{ route('providers.index') }}">Proveedores</a>
                     </li>
-                    <li {{ request()->is('admin/categories*') ? 'class=active' : '' }}>
-                        <a href="{{ route('categories.index') }}">Categorías</a>
+                    <li {{ request()->is('admin/areas*') ? 'class=active' : '' }}>
+                        <a href="{{ route('areas.index') }}">Áreas y categorías</a>
                     </li>
                     <li {{ request()->is('admin/products*') ? 'class=active' : '' }}>
-                        <a href="{{ route('products.index') }}">Productos/Servicios</a>
+                        <a href="{{ route('products.index') }}">Productos y servicios</a>
+                    </li>
+                    <li {{ request()->is('admin/expenseTypes*') ? 'class=active' : '' }}>
+                        <a href="{{ route('expenseTypes.index') }}">Tipos de gasto</a>
                     </li>
                     <li {{ request()->is('admin/users*') ? 'class=active' : '' }}>
                         <a href="{{ route('users.index') }}">Usuarios</a>

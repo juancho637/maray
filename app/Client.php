@@ -53,6 +53,13 @@ class Client extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
+    public function deposits(){
+        return $this->hasMany(Deposit::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function engagements(){
         return $this->hasMany(Engagement::class);
     }

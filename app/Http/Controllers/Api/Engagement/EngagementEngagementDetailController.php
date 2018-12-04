@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\Engagement;
 
 use App\Engagement;
+use App\Service;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -31,12 +32,18 @@ class EngagementEngagementDetailController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Engagement $engagement
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Engagement $engagement)
     {
-        //
+        $newEngagementDetail = $request->all();
+        $newEngagementDetail['service_id'] = Service::abbreviation($newEngagementDetail['abbreviation'])->first()->id;
+        $engagementDetail = $engagement->detailEngagements()->create($newEngagementDetail);
+        $engagementDetail->users()->sync($newEngagementDetail['users']);
+
+        return response()->json($engagementDetail, 200);
     }
 
     /**

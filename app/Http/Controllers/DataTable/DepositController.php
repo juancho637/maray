@@ -1,22 +1,26 @@
 <?php
 
-namespace App\Http\Controllers\Api\History;
+namespace App\Http\Controllers\DataTable;
 
-use App\Engagement;
-use App\History;
+use App\Deposit;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Yajra\DataTables\DataTables;
 
-class HistoryEngagementHistoryEngagementController extends Controller
+class DepositController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function index()
     {
-        //
+        return DataTables::of(Deposit::with('state', 'client', 'user'))
+            ->addColumn('actions', 'admin.deposits.partials.actions')
+            ->rawColumns(['actions'])
+            ->toJson();
     }
 
     /**
@@ -32,12 +36,10 @@ class HistoryEngagementHistoryEngagementController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param  \App\History $history
-     * @param  \App\Engagement $engagement
-     * @return void
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, History $history, Engagement $engagement)
+    public function store(Request $request)
     {
         //
     }
@@ -45,10 +47,10 @@ class HistoryEngagementHistoryEngagementController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\History  $history
+     * @param  \App\Deposit  $deposit
      * @return \Illuminate\Http\Response
      */
-    public function show(History $history)
+    public function show(Deposit $deposit)
     {
         //
     }
@@ -56,10 +58,10 @@ class HistoryEngagementHistoryEngagementController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\History  $history
+     * @param  \App\Deposit  $deposit
      * @return \Illuminate\Http\Response
      */
-    public function edit(History $history)
+    public function edit(Deposit $deposit)
     {
         //
     }
@@ -68,10 +70,10 @@ class HistoryEngagementHistoryEngagementController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\History  $history
+     * @param  \App\Deposit  $deposit
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, History $history)
+    public function update(Request $request, Deposit $deposit)
     {
         //
     }
@@ -79,10 +81,10 @@ class HistoryEngagementHistoryEngagementController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\History  $history
+     * @param  \App\Deposit  $deposit
      * @return \Illuminate\Http\Response
      */
-    public function destroy(History $history)
+    public function destroy(Deposit $deposit)
     {
         //
     }

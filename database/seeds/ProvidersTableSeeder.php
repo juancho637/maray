@@ -12,6 +12,58 @@ class ProvidersTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Provider::class, 30)->create();
+        Provider::create([
+            'name' => 'PROVEEDOR VARIO',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'CALIER',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'CONAVET',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'DAGO',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'DISTRIBUCIONES DAGO',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'DISTRIBUCIONES VETERINARIAS',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'DISTRIVET',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'GABRICA',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'JARAMILLO PETS',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'JARAPETS',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'LABORATORIO NOHEMY CRUZ',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'MARAVEDI',
+            'description' => 'XXX'
+        ]);
+        Provider::create([
+            'name' => 'MARAY MEDICINA VETERINARIA',
+                'description' => 'XXX'
+        ]);
+        //factory(Provider::class, 30)->create();
     }
 }

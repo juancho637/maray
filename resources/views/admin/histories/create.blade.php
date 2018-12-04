@@ -536,7 +536,7 @@
                             </div>
                         </div>
                     </div>
-                    <h4><strong>Examenes complementarios: (aún no esta)</strong></h4>
+                    {{--<h4><strong>Examenes complementarios: (aún no esta)</strong></h4>
                     <div class="nav-tabs-custom">
                         <ul class="nav nav-tabs pull-right">
                             <li><a href="#Bone_marrow_aspirate" data-toggle="tab">Aspirado de médula</a></li>
@@ -588,7 +588,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="form-group">
@@ -601,7 +601,7 @@
             </div>
             <div class="box box-info" id="vaccination_plan">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Plan de vacunación (aún no esta)</h3>
+                    <h3 class="box-title">Plan de vacunación</h3>
                     <div class="box-tools">
                         <div class="form-group">
                             <button class="btn btn-info btn-xs">Historial de vacunas</button>
@@ -614,38 +614,41 @@
                 </div>
                 <div class="box-body" style="display: none;">
                     <div class="row">
-                        <div class="col-xs-12 col-lg-3">
-                            <div class="form-group">
-                                <label for="vaccine_id">Nombre de la vacuna:</label>
-                                <select class="form-control" id="vaccine_id" style="width: 100%;"></select>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-lg-3">
-                            <div class="form-group">
+                        <form method="post" class="vaccine_form">
+                            <div class="col-xs-12 col-lg-3">
                                 <div class="form-group">
-                                    <label for="vaccination_date">Fecha de la vacunación:</label>
-                                    <div class="input-group date">
-                                        <div class="input-group-addon">
-                                            <i class="fa fa-calendar"></i>
+                                    <label for="vaccine_id">Nombre de la vacuna:</label>
+                                    <select class="form-control vaccine_id" name="product_id" id="vaccine_id" style="width: 100%;" required></select>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg-3">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="vaccination_date">Fecha de la vacunación:</label>
+                                        <div class="input-group date">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input name="date" type="text" class="form-control pull-right datepicker" id="vaccination_date" required>
                                         </div>
-                                        <input value="{{ Date('Y-m-d') }}" name="vaccination_date" type="text" class="form-control pull-right datepicker" id="vaccination_date">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-lg-5">
-                            <div class="form-group">
-                                <label for="vaccination_description">Descripción de la vacuna:</label>
-                                <textarea class="form-control" name="vaccination_description" rows="1" id="vaccination_description"></textarea>
+                            <div class="col-xs-12 col-lg-5">
+                                <div class="form-group">
+                                    <label for="vaccination_description">Descripción:</label>
+                                    <textarea class="form-control" name="description" rows="1" id="vaccination_description"></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-lg-1">
-                            <div class="form-group">
-                                <label style="color: transparent;">d</label>
-                                <button class="btn btn-success btn-block"><i class="fa fa-plus"></i></button>
+                            <div class="col-xs-12 col-lg-1">
+                                <div class="form-group">
+                                    <label style="color: transparent;">d</label>
+                                    <button class="btn btn-success btn-block"><i class="fa fa-plus"></i></button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
+                    <div class="row" id="vaccineForms"></div>
                 </div>
             </div>
             <div class="box">
@@ -726,32 +729,35 @@
                             </div>
                         </div>
                     </div>
-                    <h4><strong>Cita de control: (aún no esta)</strong></h4>
+                    <h4><strong>Cita de control:</strong></h4>
                     <div class="row">
-                        <div class="col-xs-3">
-                            <div class="form-group">
-                                <label for="date_next_engagement">Fecha de la cita:</label>
-                                <div class="input-group date">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-calendar"></i>
+                        <form id="form_next_engagement_control" method="post">
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label for="date_next_engagement">Fecha de la cita:</label>
+                                    <div class="input-group date">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input name="date" id="date_next_engagement" type="text" class="form-control pull-right datepicker" required>
+                                        <input name="engagement_id" id="engagement_id" type="hidden">
+                                        <input name="engagement_detail_id" id="engagement_detail_id" type="hidden">
                                     </div>
-                                    <input name="date" id="date_next_engagement" type="text" class="form-control pull-right datepicker">
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="form-group">
-                                <label for="description_next_engagement">Descripción:</label>
-                                <textarea class="form-control" rows="1" id="description_next_engagement" name="description"></textarea>
+                            <div class="col-xs-8">
+                                <div class="form-group">
+                                    <label for="description_next_engagement">Descripción:</label>
+                                    <textarea class="form-control" rows="1" id="description_next_engagement" name="description" required></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-1">
-                            <div class="form-group">
-                                <label style="color: transparent;">d</label>
-                                <button id="create-consultation-engagement" class="btn btn-success btn-block" style="margin: 0;"><i class="fa fa-check"></i></button>
-                                <button id="edit-consultation-engagement" class="btn btn-info btn-block" style="display: none; margin: 0;"><i class="fa fa-pencil"></i></button>
+                            <div class="col-xs-1">
+                                <div class="form-group">
+                                    <label style="color: transparent;">d</label>
+                                    <button type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>" class="btn btn-success btn-block" style="margin: 0;"><i class="fa fa-check"></i></button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -852,11 +858,6 @@
 
     <script>
         $(function () {
-            /*$.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });*/
 
             //history id
             let history_id = null;
@@ -921,7 +922,7 @@
                 let data = {};
                 data[$(this).attr('name')] = $(this).val();
 
-                console.log(data);
+                //console.log(data);
 
                 if(history_id === null){
                     createHistory().done(function (response) {
@@ -1119,59 +1120,77 @@
                 });
             });
 
-            //Codigo para la gestión de la consulta de control
-            $(document).on("click", "#create-consultation-engagement", function(){
-                //TODO: validar si es necesario que haya una formula creada
-                let _date = $('#date_next_engagement').val();
-                let _description = $('#description_next_engagement').val();
+            function arrayForm (form){
+                let _form = form.serializeArray();
+                let dataArray = [];
+                _form.map(function(key) {
+                    dataArray[key.name] = key.value;
+                });
 
-                if(_date !== '' && _description !== ''){
-                    if(history_id === null){
-                        createHistory().done(function (response) {
-                            history_id = response.id;
+                return dataArray;
+            }
 
-                            createEngagement({
-                                'pet_id': '{{ $engagement->pet->id }}',
-                                'client_id': '{{ $engagement->client->id }}',
-                                'user_id': '{{ Auth::user()->id }}',
-                                'date': _date,
-                                'engagement_to_be_confirmed': true
-                            }).done(function (response) {
-                                let _engagement_id = response.id;
+            //Codigo para la gestión de las consultas de control
+            $('#form_next_engagement_control').submit(function(event){
+                event.preventDefault();
 
-                                createHistoryEngagement(history_id, _engagement_id);
+                const _form = $(this);
+                let dataArray = arrayForm(_form);
 
-                                createEngagementDetail({
-                                    'description': _description,
-                                    'users': '{{ Auth::user()->id }}',
-                                }, _engagement_id);
-
-                                createPurchaseOrder({
-                                    'client_id': '{{ $engagement->client->id }}',
-                                    'user_id': '{{ Auth::user()->id }}',
-                                    'pet_id': '{{ $engagement->pet->id }}',
-                                    'subtotal': 0,
-                                    'taxes': 0,
-                                    'total_value': 0
-                                }, _engagement_id).done(function (response) {
-                                    let _purchase_order_id = response.id;
-                                    
-                                    createPurchaseOrderDetail({
-                                        'control_engagement': true
-                                    }, _purchase_order_id);
-                                });
-                            });
-                        });
-                    }else{
-
-                    }
+                if(dataArray.engagement_id && dataArray.engagement_detail_id) {
+                    controlEngagementUpdate(_form, dataArray);
+                    return;
                 }
-            });
-            $(document).on("click", "#edit-consultation-engagement", function(){
 
+                if(!history_id){
+                    createHistory().done(function (response) {
+                        history_id = response.id;
+                        controlEngagement(_form, dataArray);
+                    });
+                    return;
+                }
+
+                controlEngagement(_form, dataArray);
             });
 
-            $('#vaccine_id').select2({
+            //Codigo para la gestión de las citas de vacinación
+            $(document).on("submit", ".vaccine_form", function(){
+                event.preventDefault();
+
+                const _form = $(this);
+                let dataArray = arrayForm(_form);
+
+                if(dataArray.engagement_id && dataArray.engagement_detail_id) {
+                    vaccineEngagementUpdate(_form, dataArray);
+                    return;
+                }
+
+                if(!history_id){
+                    createHistory().done(function (response) {
+                        history_id = response.id;
+                        vaccineEngagement(_form, dataArray);
+                        $('#vaccine_id').val('');
+                        $('#vaccination_date').val('');
+                        $('#vaccination_description').val('');
+                    });
+                    return;
+                }
+
+                vaccineEngagement(_form, dataArray);
+                $('#vaccine_id').val('');
+                $('#vaccination_date').val('');
+                $('#vaccination_description').val('');
+            });
+            /*$(document).on("submit", ".delete_vaccine_form", function(){
+                event.preventDefault();
+
+                const _form = $(this);
+                let dataArray = arrayForm(_form);
+
+                vaccineEngagementDelete(_form, dataArray);
+            });*/
+
+            $('.vaccine_id').select2({
                 minimumInputLength: 2,
                 language: {
                     inputTooShort: function () {
@@ -1183,7 +1202,7 @@
                     data: function (params) {
                         return {
                             search: params.term,
-                            category: 'services'
+                            category: 'biologicos'
                         };
                     },
                     processResults: function (data, params) {
@@ -1281,6 +1300,28 @@
             function createEngagement(params = null) {
                 return $.post('{{ route("api.engagements.store") }}', params);
             }
+            function updateEngagement(params = null, engagement_id) {
+                let url = '{{ route("api.engagements.update", [":engagement_id"]) }}';
+                url = url.replace(':engagement_id', engagement_id);
+
+                return $.ajax({
+                    url: url,
+                    type: 'PATCH',
+                    data: params
+                });
+            }
+
+            function updateEngagementDetail(params = null, engagement_detail_id) {
+                // console.log(params);
+                let url = '{{ route("api.engagement_details.update", [":engagement_detail_id"]) }}';
+                url = url.replace(':engagement_detail_id', engagement_detail_id);
+
+                return $.ajax({
+                    url: url,
+                    type: 'PATCH',
+                    data: params
+                });
+            }
 
             function createEngagementDetail(params = null, engagement_id) {
                 let url = '{{ route("api.engagements.engagement_details.store", [":engagement_id"]) }}';
@@ -1297,18 +1338,26 @@
             }
 
             function createPurchaseOrderDetail(params = null, purchase_order_id) {
-                let url = '{{ route("api.purchase_orders.detail.store", [":purchase_order_id"]) }}';
+                let url = '{{ route("api.purchase_orders.details.store", [":purchase_order_id"]) }}';
                 url = url.replace(':purchase_order_id', purchase_order_id);
 
                 return $.post(url, params);
             }
 
-            function createHistoryEngagement(history_id, engagement_id) {
-                let url = '{{ route("api.histories.engagements.history_engagement.store", [":history_id", ":engagement_id"]) }}';
-                url = url.replace(':history_id', history_id);
-                url = url.replace(':engagement_id', engagement_id);
+            function updatePurchaseOrderDetail(params = null, purchase_order_id, detail_id) {
+                let url = '{{ route("api.purchase_orders.details.update", [":purchase_order_id", ":detail_id"]) }}';
+                url = url.replace(':purchase_order_id', purchase_order_id);
+                url = url.replace(':detail_id', detail_id);
 
-                return $.post(url);
+                return $.ajax({
+                    url: url,
+                    type: 'PATCH',
+                    data: params
+                });
+            }
+
+            function createHistoryEngagement(params = null) {
+                return $.post('{{ route("api.history_engagement.store") }}', params);
             }
 
             function createFormula(observations = null) {
@@ -1375,6 +1424,157 @@
                 url = url.replace(':history_id', history_id);
 
                 return $.post(url , params);
+            }
+
+            function controlEngagement(form, data) {
+                let button = form.find("[type='submit']");
+                button.button('loading');
+
+                createEngagement({
+                    'pet_id': '{{ $engagement->pet->id }}',
+                    'client_id': '{{ $engagement->client->id }}',
+                    'user_id': '{{ Auth::user()->id }}',
+                    'date': data.date,
+                    'engagement_to_be_confirmed': 1
+                }).done(function (response) {
+                    let _engagement_id = response.id;
+                    form.find("[name='engagement_id']").val(_engagement_id);
+
+                    createHistoryEngagement({
+                        'history_id': history_id,
+                        'engagement_id': _engagement_id
+                    });
+
+                    createEngagementDetail({
+                        'description': data.description,
+                        'abbreviation': 'consultation',
+                        'users': '{{ Auth::user()->id }}',
+                    }, _engagement_id).done(function (response) {
+                        let _engagement_detail_id = response.id;
+                        form.find("[name='engagement_detail_id']").val(_engagement_detail_id);
+                    });
+
+                    createPurchaseOrder({
+                        'client_id': '{{ $engagement->client->id }}',
+                        'user_id': '{{ Auth::user()->id }}',
+                        'pet_id': '{{ $engagement->pet->id }}',
+                        'subtotal': 0,
+                        'taxes': 0,
+                        'total_value': 0
+                    }, _engagement_id).done(function (response) {
+                        let _purchase_order_id = response.id;
+
+                        createPurchaseOrderDetail({
+                            'control_engagement': true
+                        }, _purchase_order_id).done(function () {
+                            button.button('reset');
+                            button.removeClass("btn-success").addClass("btn-info");
+                        });
+                    });
+                });
+            }
+
+            function controlEngagementUpdate(form, data) {
+                let button = form.find("[type='submit']");
+                button.button('loading');
+
+                updateEngagement({
+                    'date': data.date,
+                }, data.engagement_id);
+
+                updateEngagementDetail({
+                    'description': data.description,
+                }, data.engagement_detail_id);
+
+                button.button('reset');
+            }
+
+            function vaccineEngagement(form, data) {
+                let button = form.find("[type='submit']");
+                button.button('loading');
+
+                createEngagement({
+                    'pet_id': '{{ $engagement->pet->id }}',
+                    'client_id': '{{ $engagement->client->id }}',
+                    'user_id': '{{ Auth::user()->id }}',
+                    'date': data.date,
+                    'engagement_to_be_confirmed': 1
+                }).done(function (response) {
+                    let _engagement_id = response.id;
+                    //form.find("[name='engagement_id']").val(_engagement_id);
+
+                    createHistoryEngagement({
+                        'history_id': history_id,
+                        'engagement_id': _engagement_id
+                    });
+
+                    createEngagementDetail({
+                        'description': data.description,
+                        'abbreviation': 'services',
+                        'users': '{{ Auth::user()->id }}',
+                    }, _engagement_id);
+
+                    createPurchaseOrder({
+                        'client_id': '{{ $engagement->client->id }}',
+                        'user_id': '{{ Auth::user()->id }}',
+                        'pet_id': '{{ $engagement->pet->id }}',
+                        'subtotal': 0,
+                        'taxes': 0,
+                        'total_value': 0
+                    }, _engagement_id).done(function (response) {
+                        let _purchase_order_id = response.id;
+
+                        createPurchaseOrderDetail({
+                            'vaccine_engagement': true,
+                            'product_id': data.product_id,
+                            'quantity': 1
+                        }, _purchase_order_id).done(function () {
+                            button.button('reset');
+                            //button.removeClass("btn-success").addClass("btn-info");
+                            getNextEngagements();
+                        });
+                    });
+                });
+            }
+
+            function getNextEngagements(){
+                getHistoryEngagements({
+                    abbreviation: 'services'
+                }).done(function (response) {
+                    $('#vaccineForms').html(response.view);
+                });
+            }
+
+            function vaccineEngagementUpdate(form, data) {
+                let button = form.find("[type='submit']");
+                button.button('loading');
+
+                updateEngagement({
+                    'date': data.date,
+                }, data.engagement_id);
+
+                updateEngagementDetail({
+                    'description': data.description,
+                }, data.engagement_detail_id);
+
+                updatePurchaseOrderDetail({
+                    'vaccine_engagement': true,
+                    'product_id': data.product_id,
+                    'quantity': 1,
+                }, data.purchase_order_id, data.detail_id);
+
+                button.button('reset');
+            }
+
+            /*function vaccineEngagementDelete(form, data) {
+                console.log('delete');
+            }*/
+
+            function getHistoryEngagements(params) {
+                let url = "{{ route('api.histories.history_engagement.index', [':history_id']) }}";
+                url = url.replace(':history_id', history_id);
+
+                return $.get(url, params);
             }
         });
     </script>

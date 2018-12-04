@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Credit;
+use App\Events\CreditPaymentWasCreated;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CreditController extends Controller
 {
@@ -57,7 +59,7 @@ class CreditController extends Controller
      */
     public function edit(Credit $credit)
     {
-        //
+        return view('admin.credits.edit', compact('credit'));
     }
 
     /**
@@ -69,7 +71,39 @@ class CreditController extends Controller
      */
     public function update(Request $request, Credit $credit)
     {
-        //
+        $this->validate($request, [
+            'positiveBalance' => 'in:0'
+        ]);
+
+        $request['value'] = $request->cash + $request->cheque + $request->card;
+        $lastBalance = Auth::user()->balances()->lastBalance();
+
+        if (Auth::user()->balances->isEmpty()){
+            return redirect()->back()->with('warning', 'No tienes una caja activa');
+        }
+        if ($lastBalance->state->abbreviation !== 'gen-act'){
+            return redirect()->back()->with('warning', 'No tienes una caja activa');
+        }
+
+        $request['balance_id'] = $lastBalance->id;
+        $request['user_id'] = Auth::user()->id;
+
+        //dd($request->all());
+
+        $payment = $credit->creditPayments()->create($request->all());
+
+        CreditPaymentWasCreated::dispatch(
+            $payment->cash,
+            $payment->cheque,
+            $payment->card,
+            $payment->value
+        );
+
+        $credit->update([
+            'outstanding_balance' => ($credit->outstanding_balance - $payment->value)
+        ]);
+
+        return redirect()->route('credits.index')->with('flash', 'Pago generado correctamente');
     }
 
     /**

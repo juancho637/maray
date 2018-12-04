@@ -1,10 +1,10 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Productos/Servicios')
+@section('title', config('app.name').' | Productos y servicios')
 
-@section('header', 'Productos/Servicios')
+@section('header', 'Productos y servicios')
 
-@section('description', 'Visualizar producto/servicio')
+@section('description', 'Visualizar Productos o servicios')
 
 @push('styles')
     <!-- Select2 -->

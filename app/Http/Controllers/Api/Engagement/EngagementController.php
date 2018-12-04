@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\Engagement;
 
 use App\Engagement;
+use App\State;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -75,7 +76,9 @@ class EngagementController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $engagement = Engagement::create($request->all());
+
+        return response()->json($engagement, 200);
     }
 
     /**
@@ -121,6 +124,9 @@ class EngagementController extends Controller
 
                 return response()->json(view('admin.engagements.partials.tdEngagementTemplate', compact('engagement'))->render());
             }
+
+            $engagement->update($request->all());
+            return response()->json($engagement, 200);
         }
     }
 

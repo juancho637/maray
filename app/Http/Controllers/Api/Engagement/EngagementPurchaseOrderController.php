@@ -31,12 +31,16 @@ class EngagementPurchaseOrderController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Engagement $engagement
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Engagement $engagement)
     {
-        //
+        $newPurchaseOrder = $request->all();
+        $purchaseOrder = $engagement->purchaseOrder()->create($newPurchaseOrder);
+
+        return response()->json($purchaseOrder, 200);
     }
 
     /**

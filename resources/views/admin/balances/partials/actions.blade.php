@@ -1,0 +1,1 @@
+<a href="{{ route('balances.show', $id) }}" class="btn btn-xs btn-primary"><i class="fa fa-eye"></i></a>

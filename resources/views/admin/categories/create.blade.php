@@ -1,20 +1,26 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Categorías')
+@section('title', config('app.name').' | Áreas y categorías')
 
-@section('header', 'Categorías')
+@section('header', 'Áreas y categorías')
 
 @section('description', 'Crear categoría')
 
 @section('content')
     <div class="row">
         <div class="col-xs-12">
-            <form action="{{ route('categories.store') }}" method="POST">
+            <form action="{{ route('areas.categories.store', $area) }}" method="POST">
                 {{ csrf_field() }}
                 <div class="box box-primary">
                     <div class="box-body">
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="form-group">
+                                    <label for="name">Área:</label>
+                                    <input value="{{ $area->name }}" type="text" class="form-control" disabled>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
                                 <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                                     <label for="name">Nombre:</label>
                                     <input value="{{ old('name') }}" type="text" class="form-control" name="name" id="name" placeholder="Nombres">
@@ -28,10 +34,10 @@
                                     {!! $errors->first('description', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-block">Guardar categoría</button>
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Guardar categoría</button>
+                                </div>
                             </div>
                         </div>
                     </div>

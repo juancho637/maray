@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Area;
 use App\Category;
 use App\Service;
 use App\State;
@@ -24,29 +25,31 @@ class CategoryController extends Controller
     /**
      * Show the form for creating a new resource.
      *
+     * @param Area $area
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Area $area)
     {
-        return view('admin.categories.create');
+        return view('admin.categories.create', compact('area'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
+     * @param Area $area
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Area $area)
     {
         $this->validate($request, [
             'name' => 'required',
             'description' => 'required'
         ]);
 
-        $category = Category::create($request->all());
+        $area->categories()->create($request->all());
 
-        return redirect()->route('categories.edit', $category)->with('flash', 'Categoría creada correctamente');
+        return redirect()->route('areas.show', $area)->with('flash', 'Categoría creada correctamente');
     }
 
     /**
@@ -63,22 +66,24 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
+     * @param Area $area
      * @param  \App\Category $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category)
+    public function edit(Area $area, Category $category)
     {
-        return view('admin.categories.edit', compact('category'));
+        return view('admin.categories.edit', compact('area', 'category'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Category  $category
+     * @param  \Illuminate\Http\Request $request
+     * @param Area $area
+     * @param  \App\Category $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Category $category)
+    public function update(Request $request, Area $area, Category $category)
     {
         $this->validate($request, [
             'name' => 'required',
@@ -87,7 +92,7 @@ class CategoryController extends Controller
 
         $category->update($request->all());
 
-        return back()->with('flash', 'Categoría actualizada correctamente');
+        return redirect()->route('areas.show', $area)->with('flash', 'Categoría actualizada correctamente');
     }
 
     /**

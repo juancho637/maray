@@ -1,8 +1,8 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Clientes/Mascotas')
+@section('title', config('app.name').' | Clientes y mascotas')
 
-@section('header', 'Clientes/Mascotas')
+@section('header', 'Clientes y mascotas')
 
 @section('description', 'Editar Mascota')
 
@@ -93,10 +93,10 @@
                                     {!! $errors->first('reproductive_status', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-block">Actulizar mascota</button>
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Actulizar mascota</button>
+                                </div>
                             </div>
                         </div>
                     </div>

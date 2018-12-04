@@ -2,11 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\detailEngagement;
+use App\DetailEngagement;
 use Illuminate\Http\Request;
 
 class DetailEngagementController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -41,21 +51,21 @@ class DetailEngagementController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\detailEngagement  $detailEngagement
-     * @return \Illuminate\Http\Response
+     * @param DetailEngagement $engagement_detail
+     * @return void
      */
-    public function show(detailEngagement $detailEngagement)
+    public function show(DetailEngagement $engagement_detail)
     {
-        //
+        dd($engagement_detail);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\detailEngagement  $detailEngagement
+     * @param  \App\DetailEngagement  $engagement_detail
      * @return \Illuminate\Http\Response
      */
-    public function edit(detailEngagement $detailEngagement)
+    public function edit(DetailEngagement $engagement_detail)
     {
         //
     }
@@ -64,10 +74,10 @@ class DetailEngagementController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\detailEngagement  $detailEngagement
+     * @param  \App\DetailEngagement  $engagement_detail
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, detailEngagement $detailEngagement)
+    public function update(Request $request, DetailEngagement $engagement_detail)
     {
         //
     }
@@ -75,10 +85,10 @@ class DetailEngagementController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\detailEngagement  $detailEngagement
+     * @param  \App\DetailEngagement  $engagement_detail
      * @return \Illuminate\Http\Response
      */
-    public function destroy(detailEngagement $detailEngagement)
+    public function destroy(DetailEngagement $engagement_detail)
     {
         //
     }

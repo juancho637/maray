@@ -46,7 +46,7 @@ class EngagementController extends Controller
     public function create()
     {
         $users = User::all();
-        $consultations = Product::categoryAbbreviation('consultation')->get();
+        $consultations = Product::areaName('consulta')->get();
 
         return view('admin.engagements.create', compact('users', 'consultations'));
     }
@@ -76,7 +76,7 @@ class EngagementController extends Controller
 
         $fields['user_id'] = Auth::user()->id;
 
-        if($fields['details']['consultation']['products'][0] == Product::where('name', 'LIKE', 'CONSULTA SIN COSTO')->first()->id){
+        if($fields['details']['consultation']['products'][0] == Product::where('name', 'LIKE', 'servicio sin costo')->first()->id){
             $fields['details']['consultation']['description'] .= ' Sin costo: '.$fields['details']['consultation']['without_cost'];
         }
 
@@ -158,7 +158,7 @@ class EngagementController extends Controller
      */
     public function show(Engagement $engagement)
     {
-        //
+        dd($engagement);
     }
 
     /**
@@ -170,7 +170,7 @@ class EngagementController extends Controller
     public function edit(Engagement $engagement)
     {
         $users = User::all();
-        $consultations = Product::categoryAbbreviation('consultation')->get();
+        $consultations = Product::areaName('consulta')->get();
 
         return view('admin.engagements.edit', compact('users', 'engagement', 'consultations'));
     }

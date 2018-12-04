@@ -17,8 +17,10 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            if ($request->category){
-                $products = Product::name($request->search)->categoryAbbreviation($request->category)->get();
+            if ($request->area){
+                $products = Product::name($request->search)->areaName($request->area)->get();
+            } elseif ($request->category){
+                $products = Product::name($request->search)->categoryName($request->category)->get();
             }else{
                 $products = Product::name($request->search)->get();
             }

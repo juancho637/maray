@@ -118,3 +118,26 @@
         }
     }
 
+    if (!function_exists('next_engagement')) {
+        function next_engagement($history, $type_next_engagement){
+            $historyEngagements = $history->historyEngagements;
+
+            foreach ($historyEngagements as $historyEngagement) {
+                $engagements = $historyEngagement->engagement;
+                $serviceEngagements = [];
+
+                foreach ($engagements->detailEngagements as $detailEngagement) {
+                    if ($detailEngagement->service_id === 3 && $type_next_engagement === 'control_engagement'){
+                        return $detailEngagement->engagement;
+                    }
+
+                    if ($detailEngagement->service_id === 2 && $type_next_engagement === 'service_engagement'){
+                        $serviceEngagements[] = $detailEngagement->engagement;
+                    }
+                }
+
+                return $serviceEngagements;
+            }
+        }
+    }
+

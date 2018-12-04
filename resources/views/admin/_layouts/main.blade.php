@@ -89,6 +89,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                 @endif
 
+                @if(session()->has('warning'))
+                    <div class="alert alert-warning">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        {!! session('warning') !!}
+                    </div>
+                @endif
+
                 @yield('content')
             </section>
             <!-- /.content -->

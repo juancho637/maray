@@ -16,14 +16,16 @@ class CreateCategoriesTable extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('description');
-            $table->string('abbreviation');
+            $table->string('description')->nullable();
+            //$table->string('abbreviation');
             $table->integer('state_id')->unsigned()->default(1);
+            $table->integer('area_id')->unsigned();
             $table->softDeletes();
             $table->timestamps();
 
             //Relations
             $table->foreign('state_id')->references('id')->on('states')->onUpdate('cascade');
+            $table->foreign('area_id')->references('id')->on('areas')->onUpdate('cascade');
         });
     }
 

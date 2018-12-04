@@ -233,19 +233,19 @@
                                 <div class="col-xs-12">
                                     <div class="form-group">
                                         <label for="mouth">Boca:</label>
-                                        <textarea class="form-control autoSave" name='systems][digestive][mouth]' id="mouth">{{ $history->getProperty('digestive', 'mouth') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name='systems[digestive][mouth]' id="mouth">{{ $history->getProperty('digestive', 'mouth') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
                                     <div class="form-group">
                                         <label for="stomach">Abdomen:</label>
-                                        <textarea class="form-control autoSave" name="systems][digestive][stomach]" id="stomach">{{ $history->getProperty('digestive', 'stomach') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[digestive][stomach]" id="stomach">{{ $history->getProperty('digestive', 'stomach') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
                                     <div class="form-group">
                                         <label for="anus">Ano:</label>
-                                        <textarea class="form-control autoSave" name="systems][digestive][anus]" id="anus">{{ $history->getProperty('digestive', 'anus') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[digestive][anus]" id="anus">{{ $history->getProperty('digestive', 'anus') }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -268,31 +268,31 @@
                                 <div class="col-xs-12">
                                     <div class="form-group">
                                         <label for="breathing_type">Tipo de respiración:</label>
-                                        <textarea class="form-control autoSave" name="systems][respiratory][breathing_type]" id="breathing_type">{{ $history->getProperty('respiratory', 'breathing_type') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[respiratory][breathing_type]" id="breathing_type">{{ $history->getProperty('respiratory', 'breathing_type') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="vesicular_murmur">Murmullo vesicular:</label>
-                                        <textarea class="form-control autoSave" name="systems][respiratory][vesicular_murmur]" id="vesicular_murmur">{{ $history->getProperty('respiratory', 'vesicular_murmur') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[respiratory][vesicular_murmur]" id="vesicular_murmur">{{ $history->getProperty('respiratory', 'vesicular_murmur') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="rales">Estertores:</label>
-                                        <textarea class="form-control autoSave" name="systems][respiratory][rales]" id="rales">{{ $history->getProperty('respiratory', 'rales') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[respiratory][rales]" id="rales">{{ $history->getProperty('respiratory', 'rales') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="wheezing">Sibilancias:</label>
-                                        <textarea class="form-control autoSave" name="systems][respiratory][wheezing]" id="wheezing">{{ $history->getProperty('respiratory', 'wheezing') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[respiratory][wheezing]" id="wheezing">{{ $history->getProperty('respiratory', 'wheezing') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="estridores">Estridores:</label>
-                                        <textarea class="form-control autoSave" name="systems][respiratory][estridores]" id="estridores">{{ $history->getProperty('respiratory', 'estridores') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[respiratory][estridores]" id="estridores">{{ $history->getProperty('respiratory', 'estridores') }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -315,25 +315,25 @@
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="penis_vulva">Vulva y/o pene:</label>
-                                        <textarea class="form-control autoSave" name="systems][genitourinary][penis_vulva]" id="penis_vulva">{{ $history->getProperty('genitourinary', 'penis_vulva') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[genitourinary][penis_vulva]" id="penis_vulva">{{ $history->getProperty('genitourinary', 'penis_vulva') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="testicles">Testículos:</label>
-                                        <textarea class="form-control autoSave" name="systems][genitourinary][testicles]" id="testicles">{{ $history->getProperty('genitourinary', 'testicles') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[genitourinary][testicles]" id="testicles">{{ $history->getProperty('genitourinary', 'testicles') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="prostate">Próstata palpación:</label>
-                                        <textarea class="form-control autoSave" name="systems][genitourinary][prostate]" id="prostate">{{ $history->getProperty('genitourinary', 'prostate') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[genitourinary][prostate]" id="prostate">{{ $history->getProperty('genitourinary', 'prostate') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="mammary_gland">Glándula mamaria:</label>
-                                        <textarea class="form-control autoSave" name="systems][genitourinary][mammary_gland]" id="prostate">{{ $history->getProperty('genitourinary', 'mammary_gland') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[genitourinary][mammary_gland]" id="prostate">{{ $history->getProperty('genitourinary', 'mammary_gland') }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -356,13 +356,13 @@
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="conduct">Conducta:</label>
-                                        <textarea class="form-control autoSave" name="systems][nervous][conduct]" id="conduct">{{ $history->getProperty('nervous', 'conduct') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[nervous][conduct]" id="conduct">{{ $history->getProperty('nervous', 'conduct') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="consciousness_state">Estado de conciencia:</label>
-                                        <textarea class="form-control autoSave" name="systems][nervous][consciousness_state]" id="consciousness_state">{{ $history->getProperty('nervous', 'consciousness_state') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[nervous][consciousness_state]" id="consciousness_state">{{ $history->getProperty('nervous', 'consciousness_state') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
@@ -371,25 +371,25 @@
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="previous_members">Miembros anteriores:</label>
-                                        <textarea class="form-control autoSave" name="systems][nervous][previous_members]" id="previous_members">{{ $history->getProperty('nervous', 'previous_members') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[nervous][previous_members]" id="previous_members">{{ $history->getProperty('nervous', 'previous_members') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="subsequent_members">Miembros posteriores:</label>
-                                        <textarea class="form-control autoSave" name="systems][nervous][subsequent_members]" id="subsequent_members">{{ $history->getProperty('nervous', 'subsequent_members') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[nervous][subsequent_members]" id="subsequent_members">{{ $history->getProperty('nervous', 'subsequent_members') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="pupil">Pupila:</label>
-                                        <textarea class="form-control autoSave" name="systems][nervous][pupil]" id="pupil">{{ $history->getProperty('nervous', 'pupil') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[nervous][pupil]" id="pupil">{{ $history->getProperty('nervous', 'pupil') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="anus_vulva">Ano y/o vulva:</label>
-                                        <textarea class="form-control autoSave" name="systems][nervous][anus_vulva]" id="anus_vulva">{{ $history->getProperty('nervous', 'anus_vulva') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[nervous][anus_vulva]" id="anus_vulva">{{ $history->getProperty('nervous', 'anus_vulva') }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -412,19 +412,19 @@
                                 <div class="col-xs-12">
                                     <div class="form-group">
                                         <label for="previous_members_muscle">Miembros anteriores:</label>
-                                        <textarea class="form-control autoSave" name="systems][muscle][previous_members]" id="previous_members_muscle">{{ $history->getProperty('muscle', 'previous_members') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[muscle][previous_members]" id="previous_members_muscle">{{ $history->getProperty('muscle', 'previous_members') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
                                     <div class="form-group">
                                         <label for="subsequent_members_muscle">Miembros posteriores:</label>
-                                        <textarea class="form-control autoSave" name="systems][muscle][subsequent_members]" id="subsequent_members_muscle">{{ $history->getProperty('muscle', 'subsequent_members') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[muscle][subsequent_members]" id="subsequent_members_muscle">{{ $history->getProperty('muscle', 'subsequent_members') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
                                     <div class="form-group">
                                         <label for="spine">Columna vertebral:</label>
-                                        <textarea class="form-control autoSave" name="systems][muscle][spine]" id="spine">{{ $history->getProperty('muscle', 'spine') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[muscle][spine]" id="spine">{{ $history->getProperty('muscle', 'spine') }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -447,25 +447,25 @@
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="ears">Orejas:</label>
-                                        <textarea class="form-control autoSave" name="systems][skin_annexes][ears]" id="ears">{{ $history->getProperty('skin_annexes', 'ears') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[skin_annexes][ears]" id="ears">{{ $history->getProperty('skin_annexes', 'ears') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="skin">Piel:</label>
-                                        <textarea class="form-control autoSave" name="systems][skin_annexes][skin]" id="skin">{{ $history->getProperty('skin_annexes', 'skin') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[skin_annexes][skin]" id="skin">{{ $history->getProperty('skin_annexes', 'skin') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="nail">Uñas:</label>
-                                        <textarea class="form-control autoSave" name="systems][skin_annexes][nail]" id="nail">{{ $history->getProperty('skin_annexes', 'nail') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[skin_annexes][nail]" id="nail">{{ $history->getProperty('skin_annexes', 'nail') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="hair">Pelo:</label>
-                                        <textarea class="form-control autoSave" name="systems][skin_annexes][hair]" id="hair">{{ $history->getProperty('skin_annexes', 'hair') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[skin_annexes][hair]" id="hair">{{ $history->getProperty('skin_annexes', 'hair') }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -488,55 +488,55 @@
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="eyelids">Párpados:</label>
-                                        <textarea class="form-control autoSave" name="systems][organs_senses][eyelids]" id="eyelids">{{ $history->getProperty('organs_senses', 'eyelids') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[organs_senses][eyelids]" id="eyelids">{{ $history->getProperty('organs_senses', 'eyelids') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="conjunctiva">Conjuntiva:</label>
-                                        <textarea class="form-control autoSave" name="systems][organs_senses][conjunctiva]" id="conjunctiva">{{ $history->getProperty('organs_senses', 'conjunctiva') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[organs_senses][conjunctiva]" id="conjunctiva">{{ $history->getProperty('organs_senses', 'conjunctiva') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-4">
                                     <div class="form-group">
                                         <label for="fluorescein_test">Prueba de córnea fluoresceína:</label>
-                                        <textarea class="form-control autoSave" name="systems][organs_senses][fluorescein_test]" id="fluorescein_test">{{ $history->getProperty('organs_senses', 'fluorescein_test') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[organs_senses][fluorescein_test]" id="fluorescein_test">{{ $history->getProperty('organs_senses', 'fluorescein_test') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-4">
                                     <div class="form-group">
                                         <label for="test_rose_bengal">Prueba de córnea de rosa de bengala:</label>
-                                        <textarea class="form-control autoSave" name="systems][organs_senses][test_rose_bengal]" id="test_rose_bengal">{{ $history->getProperty('organs_senses', 'test_rose_bengal') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[organs_senses][test_rose_bengal]" id="test_rose_bengal">{{ $history->getProperty('organs_senses', 'test_rose_bengal') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-4">
                                     <div class="form-group">
                                         <label for="description_cornea">Descripción de córnea:</label>
-                                        <textarea class="form-control autoSave" name="systems][organs_senses][description_cornea]" id="description_cornea">{{ $history->getProperty('organs_senses', 'description_cornea') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[organs_senses][description_cornea]" id="description_cornea">{{ $history->getProperty('organs_senses', 'description_cornea') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
                                     <div class="form-group">
                                         <label for="test_shimmer">Test shimmer:</label>
-                                        <textarea class="form-control autoSave" name="systems][organs_senses][test_shimmer]" id="test_shimmer">{{ $history->getProperty('organs_senses', 'test_shimmer') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[organs_senses][test_shimmer]" id="test_shimmer">{{ $history->getProperty('organs_senses', 'test_shimmer') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="intraocular_pressure">Presión intraocular:</label>
-                                        <textarea class="form-control autoSave" name="systems][organs_senses][intraocular_pressure]" id="intraocular_pressure">{{ $history->getProperty('organs_senses', 'intraocular_pressure') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[organs_senses][intraocular_pressure]" id="intraocular_pressure">{{ $history->getProperty('organs_senses', 'intraocular_pressure') }}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="middle_inner_ear">Oido medio e interno:</label>
-                                        <textarea class="form-control autoSave" name="systems][organs_senses][middle_inner_ear]" id="middle_inner_ear">{{ $history->getProperty('organs_senses', 'middle_inner_ear') }}</textarea>
+                                        <textarea class="form-control autoSaveClinicExams" name="systems[organs_senses][middle_inner_ear]" id="middle_inner_ear">{{ $history->getProperty('organs_senses', 'middle_inner_ear') }}</textarea>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h4><strong>Examenes complementarios: (aún no esta)</strong></h4>
+                    {{--<h4><strong>Examenes complementarios: (aún no esta)</strong></h4>
                     <div class="nav-tabs-custom">
                         <ul class="nav nav-tabs pull-right">
                             <li><a href="#Bone_marrow_aspirate" data-toggle="tab">Aspirado de médula</a></li>
@@ -588,7 +588,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="form-group">
@@ -601,12 +601,12 @@
             </div>
             <div class="box" id="vaccination_plan">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Plan de vacunación (aún no esta)</h3>
+                    <h3 class="box-title">Plan de vacunación</h3>
                     <div class="box-tools">
                         <div class="form-group">
                             <button class="btn btn-info btn-xs">Historial de vacunas</button>
                             <label>
-                                <input type="checkbox" name="vaccination_plan" id="vaccination_plan_trigger" class="flat-red" @if(old('vaccination_plan')) checked @endif>
+                                <input type="checkbox" name="vaccination_plan" id="vaccination_plan_trigger" class="flat-red" @if(!$history->historyEngagements()->engagementService('services')->get()->isEmpty()) checked @endif>
                                 Anexar plan
                             </label>
                         </div>
@@ -614,38 +614,41 @@
                 </div>
                 <div class="box-body" style="display: none;">
                     <div class="row">
-                        <div class="col-xs-12 col-lg-3">
-                            <div class="form-group">
-                                <label for="vaccination_name">Nombre de la vacuna:</label>
-                                <input type="text" class="form-control" name="vaccination_name" id="vaccination_name" />
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-lg-3">
-                            <div class="form-group">
+                        <form method="post" class="vaccine_form">
+                            <div class="col-xs-12 col-lg-3">
                                 <div class="form-group">
-                                    <label for="vaccination_date">Fecha de la vacunación:</label>
-                                    <div class="input-group date">
-                                        <div class="input-group-addon">
-                                            <i class="fa fa-calendar"></i>
+                                    <label for="vaccine_id">Nombre de la vacuna:</label>
+                                    <select class="form-control vaccine_id" name="product_id" id="vaccine_id" style="width: 100%;" required></select>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg-3">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="vaccination_date">Fecha de la vacunación:</label>
+                                        <div class="input-group date">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input name="date" type="text" class="form-control pull-right datepicker" id="vaccination_date" required>
                                         </div>
-                                        <input value="{{ Date('Y-m-d') }}" name="vaccination_date" type="text" class="form-control pull-right" id="vaccination_date">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-lg-5">
-                            <div class="form-group">
-                                <label for="vaccination_description">Descripción de la vacuna:</label>
-                                <textarea class="form-control" name="vaccination_description" rows="1" id="vaccination_description"></textarea>
+                            <div class="col-xs-12 col-lg-5">
+                                <div class="form-group">
+                                    <label for="vaccination_description">Descripción:</label>
+                                    <textarea class="form-control" name="description" rows="1" id="vaccination_description"></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-lg-1">
-                            <div class="form-group">
-                                <label style="color: transparent;">d</label>
-                                <button class="btn btn-success btn-block"><i class="fa fa-plus"></i></button>
+                            <div class="col-xs-12 col-lg-1">
+                                <div class="form-group">
+                                    <label style="color: transparent;">d</label>
+                                    <button class="btn btn-success btn-block"><i class="fa fa-plus"></i></button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
+                    <div class="row" id="vaccineForms"></div>
                 </div>
             </div>
             <div class="box">
@@ -725,6 +728,69 @@
                                 <textarea class="form-control" name="observations" id="observations">@if(count($history->formulas) && $history->formulas[0]->observations !== null){{ $history->formulas[0]->observations }}@endif</textarea>
                             </div>
                         </div>
+                    </div>
+                    <h4><strong>Cita de control:</strong></h4>
+                    <div class="row">
+                        <form id="form_next_engagement_control" method="post">
+                            @if($history->historyEngagements()->engagementService('consultation')->get()->isEmpty())
+                                <div class="col-xs-3">
+                                    <div class="form-group">
+                                        <label for="date_next_engagement">Fecha de la cita:</label>
+                                        <div class="input-group date">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input name="date" id="date_next_engagement" type="text" class="form-control pull-right datepicker" required>
+                                            <input name="engagement_id" id="engagement_id" type="hidden">
+                                            <input name="engagement_detail_id" id="engagement_detail_id" type="hidden">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="form-group">
+                                        <label for="description_next_engagement">Descripción:</label>
+                                        <textarea class="form-control" rows="1" id="description_next_engagement" name="description" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="form-group">
+                                        <label style="color: transparent;">d</label>
+                                        <button type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>" class="btn btn-success btn-block" style="margin: 0;"><i class="fa fa-check"></i></button>
+                                    </div>
+                                </div>
+                            @else
+                                @php($controlEngagement = $history->historyEngagements()->engagementService('consultation')->first()->engagement)
+                                <div class="col-xs-3">
+                                    <div class="form-group">
+                                        <label for="date_next_engagement">Fecha de la cita:</label>
+                                        <div class="input-group date">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input name="date" id="date_next_engagement" type="text" class="form-control pull-right datepicker" required value="{{ $controlEngagement->date }}">
+                                            <input name="engagement_id" id="engagement_id" type="hidden" value="{{ $controlEngagement->id }}">
+                                        </div>
+                                    </div>
+                                </div>
+                                @foreach($controlEngagement->detailEngagements as $detailEngagement)
+                                    @if($detailEngagement->service->abbreviation === 'consultation')
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <label for="description_next_engagement">Descripción:</label>
+                                                <textarea class="form-control" rows="1" id="description_next_engagement" name="description" required>{{ $detailEngagement->description }}</textarea>
+                                                <input name="engagement_detail_id" id="engagement_detail_id" type="hidden" value="{{ $detailEngagement->id }}">
+                                            </div>
+                                        </div>
+                                    @endif
+                                @endforeach
+                                <div class="col-xs-1">
+                                    <div class="form-group">
+                                        <label style="color: transparent;">d</label>
+                                        <button type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>" class="btn btn-info btn-block" style="margin: 0;"><i class="fa fa-check"></i></button>
+                                    </div>
+                                </div>
+                            @endif
+                        </form>
                     </div>
                 </div>
             </div>
@@ -820,16 +886,15 @@
     <!-- bootstrap datepicker -->
     <script src="{{ asset('/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}" charset="UTF-8"></script>
     <script src="{{ asset('/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js') }}"></script>
+    <!-- Script para las funciones js generales -->
+    <script src="{{ asset('/js/functions.js') }}"></script>
 
     <script>
         $(function () {
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
 
-            let formulaId = @if(count($history->formulas)) {{ $history->formulas[0]->id }} @else null @endif;
+            let history_id = "{{ $history->id }}";
+            let formula_id = @if(count($history->formulas)) {{ $history->formulas[0]->id }} @else null @endif;
+            getNextEngagements();
 
             //Calculation of age
             const pet_birth_date = "{{ $engagement->pet->birth_date }}";
@@ -840,7 +905,7 @@
             $('.select2').select2();
 
             //Initialize Datepicker
-            $('#vaccination_date').datepicker({
+            $('.datepicker').datepicker({
                 autoclose: true,
                 language: 'es',
                 format: 'yyyy-mm-dd',
@@ -876,93 +941,56 @@
                 let data = {};
                 data[$(this).attr('name')] = $(this).val();
 
-                $.ajax({
-                    url: "{{ route('api.engagements.histories.update', [$engagement, $history]) }}",
-                    type: 'PATCH',
-                    data:{
-                        data
-                    }
-                });
+                updateHistory(data);
             });
 
+            //Código para el autoguardado de los campos de los examenes clínicos
+            $('.autoSaveClinicExams').blur(function() {
+                let data = {};
+                data[$(this).attr('name')] = $(this).val();
+
+                createClinicExam(data);
+            });
+
+            //Código para el guardado automatico de las observaciones de la formula
             $('#observations').blur(function() {
                 let _this = $(this).val();
 
-                if(formulaId === null){
-                    $.post('{{ route("api.histories.formulas.store", [$history->id]) }}', {
-                        observations: _this,
-                    }, function(response){
-                        formulaId = response.formula;
+                if(history_id !== "" && formula_id === null){
+                    createFormula(_this).done(function(response){
+                        formula_id = response.id;
                     });
-                }else{
-                    let url = '{{ route("api.formulas.update", [":formulaId"]) }}';
-                    url = url.replace(':formulaId', formulaId);
+                }
 
-                    $.ajax({
-                        url: url,
-                        type: 'PATCH',
-                        data:{
-                            observations: _this,
-                        }
-                    });
+                if(history_id !== "" && formula_id !== null){
+                    updateFormula(_this);
                 }
             });
 
             $(document).on("click", "#create-formula-detail", function(){
                 if($('#formula_detail_product_id').val() !== null && $('#formula_detail_indications').val() !== '' && $('#formula_detail_quantity').val() !== null){
-                    console.log(parseInt($('#formula_detail_quantity').val()));
-                    if(formulaId === null){
-                        $.post('{{ route("api.histories.formula_details.store", [$history->id]) }}', {
-                            product_id: $('#formula_detail_product_id').val(),
-                            presentation: $('#formula_detail_presentation').val(),
-                            quantity: parseInt($('#formula_detail_quantity').val()),
-                            recommendation: $('#formula_detail_indications').val(),
-                        }, function(response){
-                            formulaId = response.formula;
-                            $('#table-formula').html(response.view);
-                        });
-                    }else{
-                        let url = '{{ route("api.formulas.formula_details.store", [":formulaId"]) }}';
-                        url = url.replace(':formulaId', formulaId);
+                    if(history_id !== "" && formula_id === null){
+                        createFormula().done(function (response) {
+                            formula_id = response.id;
 
-                        $.post(url, {
-                            product_id: $('#formula_detail_product_id').val(),
-                            presentation: $('#formula_detail_presentation').val(),
-                            quantity: parseInt($('#formula_detail_quantity').val()),
-                            recommendation: $('#formula_detail_indications').val(),
-                        }, function(response){
-                            $('#table-formula').html(response.view);
+                            createFormulaDetail().done(function (response) {
+                                resetFormFormulaDetail(response.view);
+                            });
                         });
                     }
-                    $('#formula_detail_product_id').val(null).trigger('change');
-                    $('#formula_detail_quantity').val(1);
-                    $('#formula_detail_indications').val("");
+                    if(history_id !== "" && formula_id !== null){
+                        createFormulaDetail().done(function (response) {
+                            resetFormFormulaDetail(response.view);
+                        });
+                    }
                 }
             });
             $(document).on("click", "#update-formula-detail", function(){
-                let url = '{{ route("api.formula_details.update", [":formula_detail_id"]) }}';
-                url = url.replace(':formula_detail_id', $('#formula_detail_id').val());
+                updateFormulaDetail().done(function (response) {
+                    $('#update-formula-detail').hide();
+                    $('#create-formula-detail').show();
 
-                $.ajax({
-                    url: url,
-                    type: 'PATCH',
-                    data:{
-                        product_id: $('#formula_detail_product_id').val(),
-                        presentation: $('#formula_detail_presentation').val(),
-                        quantity: parseInt($('#formula_detail_quantity').val()),
-                        recommendation: $('#formula_detail_indications').val(),
-                    },
-                    success: function (response) {
-                        $('#update-formula-detail').hide();
-                        $('#create-formula-detail').show();
-
-                        $('#formula_detail_id').val("");
-                        $('#formula_detail_product_id').val(null).trigger('change');
-                        $('#formula_detail_presentation').val("");
-                        $('#formula_detail_quantity').val(1);
-                        $('#formula_detail_indications').val("");
-                        $('#table-formula').html(response.view);
-                    }
+                    resetFormFormulaDetail(response.view);
                 });
             });
             $(document).on("click", ".edit-formula-detail", function(){
@@ -999,6 +1027,7 @@
                 });
             });
 
+            //Código para la gestión de la orden de compra
             $(document).on("click", "#create-purchase-detail", function(){
                 if ($('#product_id').val() !== null){
                     $.ajax({
@@ -1021,7 +1050,6 @@
                     });
                 }
             });
-
             $(document).on("click", "#update-purchase-detail", function(){
                 let url = '{{ route("api.purchase_orders.details.update", [$engagement->purchaseOrder->id, ":detail_id"]) }}';
                 url = url.replace(':detail_id', $('#detail_id').val());
@@ -1048,7 +1076,6 @@
                     }
                 });
             });
-
             $(document).on("click", ".edit-purchase-detail", function(){
                 let url = '{{ route("api.products.show", [":product_id"]) }}';
                 url = url.replace(':product_id', $(this).attr('data-product'));
@@ -1072,7 +1099,6 @@
                     }
                 });
             });
-
             $(document).on("click", ".delete-purchase-detail", function(){
                 const detail_id = $(this).attr('data-detail');
                 let url = '{{ route("api.purchase_orders.details.destroy", [$engagement->purchaseOrder->id, ":detail_id"]) }}';
@@ -1085,6 +1111,81 @@
                         $('.ref-'+detail_id).remove();
                     }
                 });
+            });
+
+            function arrayForm (form){
+                let _form = form.serializeArray();
+                let dataArray = [];
+
+                _form.map(function(key) {
+                    dataArray[key.name] = key.value;
+                });
+
+                return dataArray;
+            }
+
+            //Codigo para la gestión de las consultas de control y citas de vacinación
+            $('#form_next_engagement_control').submit(function(event){
+                event.preventDefault();
+
+                let _form = $(this);
+                let dataArray = arrayForm(_form);
+                if(dataArray.engagement_id && dataArray.engagement_detail_id) {
+                    controlEngagementUpdate(_form, dataArray);
+                    return;
+                }
+
+                controlEngagement(_form, dataArray);
+            });
+
+            //Codigo para la gestión de las citas de vacinación
+            $(document).on("submit", ".vaccine_form", function(){
+                event.preventDefault();
+
+                const _form = $(this);
+                let dataArray = arrayForm(_form);
+
+                if(dataArray.engagement_id && dataArray.engagement_detail_id) {
+                    vaccineEngagementUpdate(_form, dataArray);
+                    return;
+                }
+
+                vaccineEngagement(_form, dataArray);
+                $('#vaccine_id').val('');
+                $('#vaccination_date').val('');
+                $('#vaccination_description').val('');
+
+            });
+            /*$(document).on("submit", ".delete_vaccine_form", function(){
+                event.preventDefault();
+
+                const _form = $(this);
+                let dataArray = arrayForm(_form);
+
+                vaccineEngagementDelete(_form, dataArray);
+            });*/
+
+            $('.vaccine_id').select2({
+                minimumInputLength: 2,
+                language: {
+                    inputTooShort: function () {
+                        return "Por favor ingrese 2 o más letras para realizar la busqueda.";
+                    }
+                },
+                ajax: {
+                    url: "{{ route('api.products.index') }}",
+                    data: function (params) {
+                        return {
+                            search: params.term,
+                            category: 'biologicos'
+                        };
+                    },
+                    processResults: function (data, params) {
+                        return {
+                            results: data
+                        };
+                    },
+                }
             });
 
             $('#formula_detail_product_id').select2({
@@ -1155,32 +1256,297 @@
                     $('#product_total_value').val(parseInt($(this).val()) * $('#product_unit_value').val());
                 }
             });
+
+            function updateHistory(params = null) {
+                let url = '{{ route("api.histories.update", [":history_id"]) }}';
+                url = url.replace(':history_id', history_id);
+
+                return $.ajax({
+                    url: url,
+                    type: 'PATCH',
+                    data: params
+                });
+            }
+
+            function createEngagement(params = null) {
+                return $.post('{{ route("api.engagements.store") }}', params);
+            }
+            function updateEngagement(params = null, engagement_id) {
+                let url = '{{ route("api.engagements.update", [":engagement_id"]) }}';
+                url = url.replace(':engagement_id', engagement_id);
+
+                return $.ajax({
+                    url: url,
+                    type: 'PATCH',
+                    data: params
+                });
+            }
+
+            function updateEngagementDetail(params = null, engagement_detail_id) {
+                let url = '{{ route("api.engagement_details.update", [":engagement_detail_id"]) }}';
+                url = url.replace(':engagement_detail_id', engagement_detail_id);
+
+                return $.ajax({
+                    url: url,
+                    type: 'PATCH',
+                    data: params
+                });
+            }
+
+            function createEngagementDetail(params = null, engagement_id) {
+                let url = '{{ route("api.engagements.engagement_details.store", [":engagement_id"]) }}';
+                url = url.replace(':engagement_id', engagement_id);
+
+                return $.post(url, params);
+            }
+
+            function createPurchaseOrder(params = null, engagement_id) {
+                let url = '{{ route("api.engagements.purchase_orders.store", [":engagement_id"]) }}';
+                url = url.replace(':engagement_id', engagement_id);
+
+                return $.post(url, params);
+            }
+
+            function createPurchaseOrderDetail(params = null, purchase_order_id) {
+                let url = '{{ route("api.purchase_orders.details.store", [":purchase_order_id"]) }}';
+                url = url.replace(':purchase_order_id', purchase_order_id);
+
+                return $.post(url, params);
+            }
+
+            function updatePurchaseOrderDetail(params = null, purchase_order_id, detail_id) {
+                let url = '{{ route("api.purchase_orders.details.update", [":purchase_order_id", ":detail_id"]) }}';
+                url = url.replace(':purchase_order_id', purchase_order_id);
+                url = url.replace(':detail_id', detail_id);
+
+                return $.ajax({
+                    url: url,
+                    type: 'PATCH',
+                    data: params
+                });
+            }
+
+            function createHistoryEngagement(params = null) {
+                return $.post('{{ route("api.history_engagement.store") }}', params);
+            }
+
+            function createFormula(observations = null) {
+                let url = "{{ route('api.histories.formulas.store', [':history_id']) }}";
+                url = url.replace(':history_id', history_id);
+
+                return $.post(url , {
+                    observations: observations
+                });
+            }
+
+            function updateFormula(observations = null) {
+                let url = "{{ route('api.formulas.update', [':formula_id']) }}";
+                url = url.replace(':formula_id', formula_id);
+
+                return $.ajax({
+                    url: url,
+                    type: 'PATCH',
+                    data: {
+                        observations: observations,
+                    }
+                });
+            }
+
+            function createFormulaDetail() {
+                let url = '{{ route("api.formulas.formula_details.store", [":formula_id"]) }}';
+                url = url.replace(':formula_id', formula_id);
+
+                return $.post(url, {
+                    product_id: $('#formula_detail_product_id').val(),
+                    presentation: $('#formula_detail_presentation').val(),
+                    quantity: parseInt($('#formula_detail_quantity').val()),
+                    recommendation: $('#formula_detail_indications').val(),
+                });
+            }
+
+            function updateFormulaDetail() {
+                let url = '{{ route("api.formula_details.update", [":formula_detail_id"]) }}';
+                url = url.replace(':formula_detail_id', $('#formula_detail_id').val());
+
+                return $.ajax({
+                    url: url,
+                    type: 'PATCH',
+                    data: {
+                        product_id: $('#formula_detail_product_id').val(),
+                        presentation: $('#formula_detail_presentation').val(),
+                        quantity: parseInt($('#formula_detail_quantity').val()),
+                        recommendation: $('#formula_detail_indications').val(),
+                    }
+                });
+            }
+
+            function resetFormFormulaDetail(view) {
+                $('#formula_detail_id').val("");
+                $('#formula_detail_product_id').val(null).trigger('change');
+                $('#formula_detail_presentation').val("");
+                $('#formula_detail_quantity').val(1);
+                $('#formula_detail_indications').val("");
+                $('#table-formula').html(view);
+            }
+
+            function createClinicExam(params = null) {
+                let url = "{{ route('api.histories.clinic_exams.store', [':history_id']) }}";
+                url = url.replace(':history_id', history_id);
+
+                return $.post(url , params);
+            }
+
+            function controlEngagement(form, data) {
+                let button = form.find("[type='submit']");
+                button.button('loading');
+
+                createEngagement({
+                    'pet_id': '{{ $engagement->pet->id }}',
+                    'client_id': '{{ $engagement->client->id }}',
+                    'user_id': '{{ Auth::user()->id }}',
+                    'date': data.date,
+                    'engagement_to_be_confirmed': 1
+                }).done(function (response) {
+                    let _engagement_id = response.id;
+                    form.find("[name='engagement_id']").val(_engagement_id);
+
+                    createHistoryEngagement({
+                        'history_id': history_id,
+                        'engagement_id': _engagement_id
+                    });
+
+                    createEngagementDetail({
+                        'description': data.description,
+                        'abbreviation': 'consultation',
+                        'users': '{{ Auth::user()->id }}',
+                    }, _engagement_id).done(function (response) {
+                        let _engagement_detail_id = response.id;
+                        form.find("[name='engagement_detail_id']").val(_engagement_detail_id);
+                    });
+
+                    createPurchaseOrder({
+                        'client_id': '{{ $engagement->client->id }}',
+                        'user_id': '{{ Auth::user()->id }}',
+                        'pet_id': '{{ $engagement->pet->id }}',
+                        'subtotal': 0,
+                        'taxes': 0,
+                        'total_value': 0
+                    }, _engagement_id).done(function (response) {
+                        let _purchase_order_id = response.id;
+
+                        createPurchaseOrderDetail({
+                            'control_engagement': true
+                        }, _purchase_order_id).done(function () {
+                            button.button('reset');
+                            button.removeClass("btn-success").addClass("btn-info");
+                        });
+                    });
+                });
+            }
+
+            function controlEngagementUpdate(form, data) {
+                let button = form.find("[type='submit']");
+                button.button('loading');
+                //console.log(data);
+
+                updateEngagement({
+                    'date': data.date,
+                }, data.engagement_id);
+
+                updateEngagementDetail({
+                    'description': data.description,
+                }, data.engagement_detail_id);
+
+                button.button('reset');
+            }
+
+            function vaccineEngagement(form, data) {
+                let button = form.find("[type='submit']");
+                button.button('loading');
+
+                createEngagement({
+                    'pet_id': '{{ $engagement->pet->id }}',
+                    'client_id': '{{ $engagement->client->id }}',
+                    'user_id': '{{ Auth::user()->id }}',
+                    'date': data.date,
+                    'engagement_to_be_confirmed': 1
+                }).done(function (response) {
+                    let _engagement_id = response.id;
+                    //form.find("[name='engagement_id']").val(_engagement_id);
+
+                    createHistoryEngagement({
+                        'history_id': history_id,
+                        'engagement_id': _engagement_id
+                    });
+
+                    createEngagementDetail({
+                        'description': data.description,
+                        'abbreviation': 'services',
+                        'users': '{{ Auth::user()->id }}',
+                    }, _engagement_id);
+
+                    createPurchaseOrder({
+                        'client_id': '{{ $engagement->client->id }}',
+                        'user_id': '{{ Auth::user()->id }}',
+                        'pet_id': '{{ $engagement->pet->id }}',
+                        'subtotal': 0,
+                        'taxes': 0,
+                        'total_value': 0
+                    }, _engagement_id).done(function (response) {
+                        let _purchase_order_id = response.id;
+
+                        createPurchaseOrderDetail({
+                            'vaccine_engagement': true,
+                            'product_id': data.product_id,
+                            'quantity': 1
+                        }, _purchase_order_id).done(function () {
+                            button.button('reset');
+                            //button.removeClass("btn-success").addClass("btn-info");
+                            getNextEngagements();
+                        });
+                    });
+                });
+            }
+
+            function getNextEngagements(){
+                getHistoryEngagements({
+                    abbreviation: 'services'
+                }).done(function (response) {
+                    $('#vaccineForms').html(response.view);
+                });
+            }
+
+            function vaccineEngagementUpdate(form, data) {
+                let button = form.find("[type='submit']");
+                button.button('loading');
+
+                updateEngagement({
+                    'date': data.date,
+                }, data.engagement_id);
+
+                updateEngagementDetail({
+                    'description': data.description,
+                }, data.engagement_detail_id);
+
+                updatePurchaseOrderDetail({
+                    'vaccine_engagement': true,
+                    'product_id': data.product_id,
+                    'quantity': 1,
+                }, data.purchase_order_id, data.detail_id);
+
+                button.button('reset');
+            }
+
+            {{--function vaccineEngagementDelete(form, data) {
+                console.log('delete');
+            }--}}
+
+            function getHistoryEngagements(params) {
+                let url = "{{ route('api.histories.history_engagement.index', [':history_id']) }}";
+                url = url.replace(':history_id', history_id);
+
+                return $.get(url, params);
+            }
         });
-
-        function collapseChecked(trigger, content) {
-            $('#'+trigger).on('ifToggled', function () {
-                if($(this).is(":checked")){
-                    $('#'+content).collapse('show');
-                } else {
-                    $('#'+content).collapse('hide');
-                }
-            });
-            if($('#'+trigger).is(":checked")){
-                $('#'+content).collapse('show');
-            }
-        }
-
-        function boxChecked(trigger, content) {
-            $('#'+trigger).on('ifToggled', function () {
-                if($(this).is(":checked")){
-                    $('#'+content).boxWidget('expand');
-                } else {
-                    $('#'+content).boxWidget('collapse');
-                }
-            });
-            if($('#'+trigger).is(":checked")){
-                $('#'+content).boxWidget('expand');
-            }
-        }
     </script>
 @endpush

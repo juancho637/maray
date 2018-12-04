@@ -1,8 +1,8 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Clientes/Mascotas')
+@section('title', config('app.name').' | Clientes y mascotas')
 
-@section('header', 'Clientes/Mascotas')
+@section('header', 'Clientes y mascotas')
 
 @section('description', 'Crear cliente')
 
@@ -118,10 +118,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-block">Guardar cliente</button>
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Guardar cliente</button>
+                                </div>
                             </div>
                         </div>
                     </div>

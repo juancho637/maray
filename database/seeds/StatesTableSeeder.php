@@ -70,5 +70,25 @@ class StatesTableSeeder extends Seeder
             'abbreviation' => 'appoint-canceled',
             'type' => 'appointments',
         ]);
+
+        State::create([
+            'name' => 'cerrada',
+            'description' => 'estado de la caja cerrada',
+            'abbreviation' => 'balance-closed',
+            'type' => 'balances',
+        ]);
+
+        State::create([
+            'name' => 'cancelado',
+            'description' => 'estado del deposito cancelado',
+            'abbreviation' => 'deposit-canceled',
+            'type' => 'deposit',
+        ]);
+        State::create([
+            'name' => 'asignado',
+            'description' => 'estado del deposito asignado',
+            'abbreviation' => 'deposit-assigned',
+            'type' => 'deposit',
+        ]);
     }
 }

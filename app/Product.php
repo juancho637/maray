@@ -24,6 +24,7 @@ class Product extends Model
         'description',
         'type',
         'state_id',
+        'area_id',
         'category_id',
     ];
 
@@ -32,6 +33,13 @@ class Product extends Model
      */
     public function category(){
         return $this->belongsTo(Category::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function area(){
+        return $this->belongsTo(Area::class);
     }
 
     /**
@@ -75,16 +83,26 @@ class Product extends Model
     }
 
     /**
-     * Scope a query to only include users of a given occupations with abbreviation.
-     *
      * @param  \Illuminate\Database\Eloquent\Builder $query
-     * @param  mixed $categoryAbbreviation
+     * @param  mixed $categoryName
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopeCategoryAbbreviation($query, $categoryAbbreviation)
+    public function scopeCategoryName($query, $categoryName)
     {
-        return $query->whereHas('category', function ($query) use ($categoryAbbreviation) {
-            $query->where('abbreviation', $categoryAbbreviation);
+        return $query->whereHas('category', function ($query) use ($categoryName) {
+            $query->where('name', $categoryName);
+        });
+    }
+
+    /**
+     * @param  \Illuminate\Database\Eloquent\Builder $query
+     * @param  mixed $areaName
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeAreaName($query, $areaName)
+    {
+        return $query->whereHas('area', function ($query) use ($areaName) {
+            $query->where('name', $areaName);
         });
     }
 
@@ -94,6 +112,14 @@ class Product extends Model
 
     public function setNameAttribute($name){
         $this->attributes['name'] =  strtolower($name);
+    }
+
+    public function getTypeAttribute($type){
+        return ucfirst(strtolower($type));
+    }
+
+    public function setTypeAttribute($type){
+        $this->attributes['type'] =  strtolower($type);
     }
 
     public function getUnitValueAttribute()

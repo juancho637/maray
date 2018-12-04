@@ -21,11 +21,13 @@ class CreateProductsTable extends Migration
             $table->string('description')->nullable();
             $table->string('type');
             $table->integer('state_id')->unsigned()->default(1);
+            $table->integer('area_id')->unsigned();
             $table->integer('category_id')->unsigned();
             $table->softDeletes();
             $table->timestamps();
 
             //Relations
+            $table->foreign('area_id')->references('id')->on('areas')->onUpdate('cascade');
             $table->foreign('category_id')->references('id')->on('categories')->onUpdate('cascade');
             $table->foreign('state_id')->references('id')->on('states')->onUpdate('cascade');
         });

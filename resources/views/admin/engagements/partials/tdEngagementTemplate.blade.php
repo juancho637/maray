@@ -7,7 +7,9 @@
             @endif
         @endforeach
         @foreach($engagement->detailEngagements as $detailEngagement)
-            @if($detailEngagement->service->abbreviation === 'consultation')
+            @if($detailEngagement->engagement->engagement_to_be_confirmed)
+                <div>Por confirmar</div>
+            @elseif($detailEngagement->service->abbreviation === 'consultation')
                 <div>{{ $detailEngagement->start_time.' - '.$detailEngagement->end_time }}</div>
             @elseif($detailEngagement->service->abbreviation === 'services' && $flag)
                 <div>{{ $detailEngagement->start_time.' - '.$detailEngagement->end_time }}</div>
@@ -40,8 +42,10 @@
         <a type="button" class="btn label-warning btn-xs btn-undo-assist" ref={{ $engagement->id }}><i class="fa fa-undo" aria-hidden="true"></i></a>
     @endif
     @if($engagement->state->abbreviation === 'gen-act')
-        <a type="button" class="btn label-success btn-xs btn-assist" ref={{ $engagement->id }}><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
-        <a type="button" class="btn label-warning btn-xs btn-not-assist" ref={{ $engagement->id }}><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+        @if(!$engagement->engagement_to_be_confirmed)
+            <a type="button" class="btn label-success btn-xs btn-assist" ref={{ $engagement->id }}><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+            <a type="button" class="btn label-warning btn-xs btn-not-assist" ref={{ $engagement->id }}><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+        @endif
         <a type="button" class="btn label-danger btn-xs btn-cancel" ref={{ $engagement->id }}><i class="fa fa-times" aria-hidden="true"></i></a>
         <a type="button" href="{{ route("engagements.edit", $engagement->id) }}" class="btn label-info btn-xs custom-margin btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
     @endif

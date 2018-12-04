@@ -1,10 +1,10 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Especies/Razas')
+@section('title', config('app.name').' | Especies y razas')
 
-@section('header', 'Especies/Razas')
+@section('header', 'Especies y razas')
 
-@section('description', 'Página para gestión de especies/razas')
+@section('description', 'Página para gestión de especies y razas')
 
 @push('styles')
 

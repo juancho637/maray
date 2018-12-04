@@ -1,8 +1,8 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Clientes/Mascotas')
+@section('title', config('app.name').' | Clientes y mascotas')
 
-@section('header', 'Clientes/Mascotas')
+@section('header', 'Clientes y mascotas')
 
 @section('description', 'Visualizar cliente')
 
@@ -90,9 +90,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12">
-                    <a href="{{ route('clients.edit', $client) }}" class="btn btn-warning btn-block">Editar cliente</a>
+                    <div class="col-xs-12">
+                        <a href="{{ route('clients.edit', $client) }}" class="btn btn-warning btn-block">Editar cliente</a>
+                    </div>
                 </div>
             </div>
         </div>

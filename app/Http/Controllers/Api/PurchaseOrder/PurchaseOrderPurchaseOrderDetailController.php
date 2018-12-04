@@ -41,9 +41,10 @@ class PurchaseOrderPurchaseOrderDetailController extends Controller
     public function store(Request $request, PurchaseOrder $purchaseOrder)
     {
         if ($request->has('control_engagement')){
-            $product = Product::find($request->product_id);
+            $product = Product::name("servicio sin costo")->first();
             $newDetail = [
-                "quantity" => 1
+                "quantity" => 1,
+                "product_id" => $product->id
             ];
         }else{
             $product = Product::find($request->product_id);
@@ -53,14 +54,18 @@ class PurchaseOrderPurchaseOrderDetailController extends Controller
         $newDetail['tax_percentage'] = $product->tax_percentage;
         $newDetail['value'] = $product->value;
 
-        $purchaseOrder->details()->create($newDetail);
+        $purchaseOrderDetail = $purchaseOrder->details()->create($newDetail);
 
         $purchaseOrder->subtotal += $product->value * $newDetail['quantity'];
         $purchaseOrder->taxes += $product->taxes * $newDetail['quantity'];
         $purchaseOrder->total_value += $product->unit_value * $newDetail['quantity'];
         $purchaseOrder->save();
 
-        return response()->json(view('admin.histories.partials.trPurchaseOrderTemplate', ['details' => $purchaseOrder->details])->render());
+        if ($request->has('control_engagement') || $request->has('vaccine_engagement')){
+            return response()->json($purchaseOrderDetail, 200);
+        }else{
+            return response()->json(view('admin.histories.partials.trPurchaseOrderTemplate', ['details' => $purchaseOrder->details])->render());
+        }
     }
 
     /**
@@ -113,7 +118,11 @@ class PurchaseOrderPurchaseOrderDetailController extends Controller
         $purchaseOrder->total_value += $product->unit_value * $updateDetail['quantity'];
         $purchaseOrder->save();
 
-        return response()->json(view('admin.histories.partials.trPurchaseOrderTemplate', ['details' => $purchaseOrder->details])->render());
+        if ($request->has('control_engagement') || $request->has('vaccine_engagement')){
+            return response()->json($detail, 200);
+        }else{
+            return response()->json(view('admin.histories.partials.trPurchaseOrderTemplate', ['details' => $purchaseOrder->details])->render());
+        }
     }
 
     /**

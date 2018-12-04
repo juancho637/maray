@@ -33,7 +33,7 @@ class StoreEngagementRequest extends FormRequest
             if(in_array('consultation', $this->input('services'))){
                 $rules['details.consultation.users'] = 'required|array|min:1';
                 $rules['details.consultation.users.*'] = 'exists:users,id';
-                if ($this->input('details.consultation.products.0') == Product::where('name', 'LIKE', 'CONSULTA SIN COSTO')->first()->id) {
+                if ($this->input('details.consultation.products.0') == Product::where('name', 'LIKE', 'servicio sin costo')->first()->id) {
                     $rules['details.consultation.without_cost'] = 'required';
                 }
                 if ($this->input('home_service') !== 'on') {

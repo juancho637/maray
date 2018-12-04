@@ -29,4 +29,16 @@ class Service extends Model
     public function detailEngagements(){
         return $this->hasMany(DetailEngagement::class);
     }
+
+    /**
+     * Scope a query to only include services of a given abbreviation.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder $query
+     * @param  mixed $abbreviation
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeAbbreviation($query, $abbreviation)
+    {
+        return $query->where('abbreviation', 'LIKE', '%'.$abbreviation.'%');
+    }
 }

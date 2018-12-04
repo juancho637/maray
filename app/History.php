@@ -54,7 +54,7 @@ class History extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function historyEngagement()
+    public function historyEngagements()
     {
         return $this->hasMany(HistoryEngagement::class);
     }

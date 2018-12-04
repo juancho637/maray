@@ -25,4 +25,17 @@ class HistoryEngagement extends Model
     {
         return $this->belongsTo(Engagement::class);
     }
+
+
+
+    public function scopeEngagementService($query, $typeDetail)
+    {
+        return $query->whereHas('engagement', function ($query) use ($typeDetail){
+            $query->whereHas('detailEngagements', function ($query) use ($typeDetail){
+                $query->whereHas('service', function ($query) use ($typeDetail){
+                    $query->where('abbreviation', $typeDetail);
+                });
+            });
+        });
+    }
 }

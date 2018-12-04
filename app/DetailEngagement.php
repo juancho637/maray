@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class DetailEngagement extends Model
 {
-    //use SoftDeletes;
+    use SoftDeletes;
 
     protected $fillable = [
         'engagement_id',

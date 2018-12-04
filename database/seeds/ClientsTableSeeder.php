@@ -26,6 +26,6 @@ class ClientsTableSeeder extends Seeder
             //'junkie' => false,
         ]);
 
-        factory(Client::class, 6000)->create();
+        factory(Client::class, 2000)->create();
     }
 }

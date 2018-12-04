@@ -1,8 +1,8 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Especies/Razas')
+@section('title', config('app.name').' | Especies y razas')
 
-@section('header', 'Especies/Razas')
+@section('header', 'Especies y razas')
 
 @section('description', 'Actualizar raza')
 
@@ -29,10 +29,10 @@
                                     {!! $errors->first('description', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-block">Actualizar raza</button>
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Actualizar raza</button>
+                                </div>
                             </div>
                         </div>
                     </div>

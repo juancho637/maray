@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Deposit;
+use App\Events\DepositWasCreated;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class DepositController extends Controller
 {
@@ -24,7 +26,7 @@ class DepositController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.deposits.create');
     }
 
     /**
@@ -35,7 +37,42 @@ class DepositController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $lastBalance = Auth::user()->balances()->lastBalance();
+
+        if (Auth::user()->balances->isEmpty()){
+            return redirect()->route('balances.index')->with('warning', 'No tienes una caja activa');
+        }
+
+        if ($lastBalance->state->abbreviation !== 'gen-act'){
+            return redirect()->route('balances.index')->with('warning', 'No tienes una caja activa');
+        }
+
+        $depositFields = $request->all();
+
+        if ($depositFields['cash'] === null){
+            $depositFields['cash'] = 0;
+        }
+        if ($depositFields['cheque'] === null){
+            $depositFields['cheque'] = 0;
+        }
+        if ($depositFields['card'] === null){
+            $depositFields['card'] = 0;
+        }
+
+        $depositFields['user_id'] = Auth::user()->id;
+        $depositFields['balance_id'] = $lastBalance->id;
+        $depositFields['total'] = $request->cash + $request->cheque + $request->card;
+
+        Deposit::create($depositFields);
+
+        DepositWasCreated::dispatch(
+            $depositFields['cash'],
+            $depositFields['cheque'],
+            $depositFields['card'],
+            $depositFields['total']
+        );
+
+        return redirect()->route('deposits.index')->with('flash', 'Deposito creado correctamente');
     }
 
     /**

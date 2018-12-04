@@ -17,6 +17,7 @@ class Category extends Model
         'description',
         'abbreviation',
         'state_id',
+        'area_id',
     ];
 
     /**
@@ -29,7 +30,22 @@ class Category extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
+    public function area(){
+        return $this->belongsTo(Area::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function state(){
         return $this->belongsTo(State::class);
+    }
+
+    public function getNameAttribute($name){
+        return ucfirst(strtolower($name));
+    }
+
+    public function setNameAttribute($name){
+        $this->attributes['name'] =  strtolower($name);
     }
 }

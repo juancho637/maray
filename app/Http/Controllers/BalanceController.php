@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Balance;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BalanceController extends Controller
 {
@@ -14,7 +15,9 @@ class BalanceController extends Controller
      */
     public function index()
     {
-        //
+        $balances = Balance::allowed()->orderBy('id', 'DESC')->get();
+
+        return view('admin.balances.index', compact('balances'));
     }
 
     /**
@@ -35,7 +38,11 @@ class BalanceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Balance::create([
+            'user_id' => Auth::user()->id
+        ]);
+
+        return redirect()->route('balances.index')->with('flash', 'Caja creada correctamente');
     }
 
     /**
@@ -46,7 +53,7 @@ class BalanceController extends Controller
      */
     public function show(Balance $balance)
     {
-        //
+        return view('admin.balances.show', compact('balance'));
     }
 
     /**

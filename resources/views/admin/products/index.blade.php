@@ -1,10 +1,10 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Productos/Servicios')
+@section('title', config('app.name').' | Productos y servicios')
 
-@section('header', 'Productos/Servicios')
+@section('header', 'Productos y servicios')
 
-@section('description', 'Página para gestión de productos/servicios')
+@section('description', 'Página para gestión de productos y servicios')
 
 @push('styles')
 
@@ -13,10 +13,10 @@
 @section('content')
     <div class="box box-primary">
         <div class="box-header">
-            <h3 class="box-title">Listado de productos/servicios</h3>
+            <h3 class="box-title">Listado de productos y servicios</h3>
             <div class="box-tools pull-right">
                 <a type="button" class="btn btn-primary btn-sm" href="{{ route('products.create') }}">
-                    <i class="fa fa-plus"></i> Nuevo producto/servicio
+                    <i class="fa fa-plus"></i> Nuevo producto o servicio
                 </a>
             </div>
         </div>

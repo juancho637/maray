@@ -1,8 +1,10 @@
 <?php
 
+use App\Area;
 use App\Breed;
 use App\Client;
 use App\Dosage;
+use App\ExpenseType;
 use App\Occupation;
 use App\Pet;
 use App\Product;
@@ -37,12 +39,14 @@ class DatabaseSeeder extends Seeder
         Pet::truncate();
         DB::table('client_pet')->truncate();
         Provider::truncate();
+        Area::truncate();
         Category::truncate();
         Product::truncate();
         DB::table('product_provider')->truncate();
         DB::table('category_product')->truncate();
         Stock::truncate();
         Service::truncate();
+        ExpenseType::truncate();
         DB::table('service_user')->truncate();
 
         // flushEventListeners evita el lanzamiento de eventos a la hora de ejecutar los Sedders
@@ -54,10 +58,12 @@ class DatabaseSeeder extends Seeder
         Breed::flushEventListeners();
         Pet::flushEventListeners();
         Provider::flushEventListeners();
+        Area::flushEventListeners();
         Category::flushEventListeners();
         Product::flushEventListeners();
         Stock::flushEventListeners();
         Service::flushEventListeners();
+        ExpenseType::flushEventListeners();
         //Dosage::flushEventListeners();
 
         $this->call(StatesTableSeeder::class);
@@ -68,9 +74,11 @@ class DatabaseSeeder extends Seeder
         $this->call(BreedsTableSeeder::class);
         $this->call(PetsTableSeeder::class);
         $this->call(ProvidersTableSeeder::class);
+        $this->call(AreasTableSeeder::class);
         $this->call(CategoriesTableSeeder::class);
         $this->call(ProductsTableSeeder::class);
         $this->call(StocksTableSeeder::class);
         $this->call(ServicesTableSeeder::class);
+        $this->call(ExpenseTypeTableSeeder::class);
     }
 }

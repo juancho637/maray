@@ -1,10 +1,10 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Productos/Servicios')
+@section('title', config('app.name').' | Productos y servicios')
 
-@section('header', 'Productos/Servicios')
+@section('header', 'Productos y servicios')
 
-@section('description', 'Crear producto/servicio')
+@section('description', 'Crear producto o servicio')
 
 @push('styles')
     <!-- Select2 -->
@@ -53,14 +53,24 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-6">
+                            <div class="col-xs-6 col-sm-3">
                                 <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
-                                    <label for="category_id">Categoría:</label>
+                                    <label for="category_id">Área:</label>
                                     <select class="form-control select2" name="category_id" id="category_id" data-placeholder="Seleccione una categoría"
                                             style="width: 100%;">
                                         @foreach($categories as $category)
                                             <option value="{{ $category->id }}" {{ old('category_id') == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
                                         @endforeach
+                                    </select>
+                                    {!! $errors->first('category_id', '<span class="help-block">:message</span>') !!}
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
+                                    <label for="category_id">Categoría: (aun no esta)</label>
+                                    <select class="form-control select2" name="category_id" id="category_id" data-placeholder="Seleccione una categoría"
+                                            style="width: 100%;">
+                                            <option>categoría</option>
                                     </select>
                                     {!! $errors->first('category_id', '<span class="help-block">:message</span>') !!}
                                 </div>

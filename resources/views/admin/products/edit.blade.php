@@ -1,10 +1,10 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Productos/Servicios')
+@section('title', config('app.name').' | Productos y servicios')
 
-@section('header', 'Productos/Servicios')
+@section('header', 'Productos y servicios')
 
-@section('description', 'Editar producto/servicio')
+@section('description', 'Actualizar producto o servicio')
 
 @push('styles')
     <!-- Select2 -->
@@ -28,14 +28,14 @@
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="form-group {{ $errors->has('value') ? 'has-error' : '' }}">
                             <label for="value">Precio:</label>
-                            <input value="{{ old('value', $product->value) }}" type="number" min="0" class="form-control" name="value" id="value" placeholder="Precio del producto/servicio ($)">
+                            <input value="{{ old('value', $product->value) }}" type="number" min="0" class="form-control" name="value" id="value" placeholder="Precio del producto/servicio ($)" data-inputmask="'alias': 'decimal'" data-mask>
                             {!! $errors->first('value', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="form-group {{ $errors->has('tax_percentage') ? 'has-error' : '' }}">
                             <label for="tax_percentage">Porcentaje de impuestos:</label>
-                            <input value="{{ old('tax_percentage', $product->tax_percentage) }}" type="number" min="0" max="100" class="form-control" name="tax_percentage" id="tax_percentage" placeholder="Porcentaje de impuestos (%)">
+                            <input value="{{ old('tax_percentage', $product->tax_percentage) }}" type="text" min="0" max="100" class="form-control" name="tax_percentage" id="tax_percentage" placeholder="Porcentaje de impuestos (%)" data-inputmask="'alias': 'currency', 'groupSeparator': ',', 'autoGroup': true, 'placeholder': '0'" data-mask>
                             {!! $errors->first('tax_percentage', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
@@ -44,8 +44,8 @@
                             <label for="type">Tipo:</label>
                             <select name="type" id="type" class="form-control select2" style="width: 100%;">
                                 <option value="" selected="selected">Selecciona un tipo:</option>
-                                <option value="producto" @if (old('type', $product->type) == "producto") {{ 'selected' }} @endif>Producto</option>
-                                <option value="servicio" @if (old('type', $product->type) == "servicio") {{ 'selected' }} @endif>Servicio</option>
+                                <option value="producto" @if (old('type', $product->type) == "Producto") {{ 'selected' }} @endif>Producto</option>
+                                <option value="servicio" @if (old('type', $product->type) == "Servicio") {{ 'selected' }} @endif>Servicio</option>
                             </select>
                             {!! $errors->first('type', '<span class="help-block">:message</span>') !!}
                         </div>
@@ -97,6 +97,14 @@
 @endsection
 
 @push('scripts')
+    <!-- InputMask -->
+    {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.2.6/jquery.inputmask.bundle.min.js"></script>
+    --}}
+    <script src="{{ asset('/plugins/input-mask/jquery.inputmask.js') }}"></script>
+    <script src="{{ asset('/plugins/input-mask/jquery.inputmask.date.extensions.js') }}"></script>
+    <script src="{{ asset('/plugins/input-mask/jquery.inputmask.extensions.js') }}"></script>
+
+
     <!-- Select2 -->
     <script src="{{ asset('/plugins/select2/dist/js/select2.full.min.js') }}"></script>
 
@@ -104,6 +112,9 @@
         $(function () {
             //Initialize Select2 Elements
             $('.select2').select2();
+
+            //Initialize Datemask2 Elements
+            $('[data-mask]').inputmask();
         });
     </script>
 @endpush

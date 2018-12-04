@@ -54,7 +54,7 @@ class ProductController extends Controller
                 'required',
                 Rule::in(['producto', 'servicio']),
             ],
-            'description' => 'required',
+            //'description' => 'required',
             'providers' => 'required|array|min:1',
             "providers.*" => 'exists:providers,id',
             'category_id' => 'required|exists:categories,id',
@@ -105,16 +105,16 @@ class ProductController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
-            'value' => 'required|numeric|min:0',
+            'value' => 'required|regex:/^[0-9]+[.,]?[0-9]*/',
             'tax_percentage' => 'required|numeric|min:0',
             'type' => [
                 'required',
-                Rule::in(['producto', 'servicio']),
+                Rule::in(['producto', 'servicio'])
             ],
-            'description' => 'required',
+            //'description' => 'required',
             'providers' => 'required|array|min:1',
-            "providers.*" => 'exists:providers,id',
-            'category' => 'required|exists:categories,id',
+            'providers.*' => 'exists:providers,id',
+            'category_id' => 'required|exists:categories,id'
         ]);
 
         $product->update($request->all());

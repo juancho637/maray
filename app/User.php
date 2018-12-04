@@ -57,6 +57,20 @@ class User extends Authenticatable
     }
 
     /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function balances(){
+        return $this->hasMany(Balance::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function creditPayments(){
+        return $this->hasMany(CreditPayment::class);
+    }
+
+    /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function occupation(){
@@ -68,6 +82,13 @@ class User extends Authenticatable
      */
     public function services(){
         return $this->belongsToMany(Service::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function expenses(){
+        return $this->hasMany(Expense::class);
     }
 
     /**
