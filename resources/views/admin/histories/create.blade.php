@@ -1412,7 +1412,7 @@
             function resetFormFormulaDetail(view) {
                 $('#formula_detail_id').val("");
                 $('#formula_detail_product_id').val(null).trigger('change');
-                $('#formula_detail_presentation').val("");
+                $('#formula_detail_presentation').val("cápsula");
                 $('#formula_detail_quantity').val(1);
                 $('#formula_detail_indications').val("");
                 $('#table-formula').html(view);

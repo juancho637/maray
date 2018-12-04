@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b7b9d3b-f187-419f-b1b3-a50ecb95a897" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/histories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/histories/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php" afterDir="false" />
     </list>
@@ -135,11 +134,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="1222" column="23" lean-forward="true" selection-start-line="1222" selection-start-column="23" selection-end-line="1222" selection-end-column="23" />
+            <state relative-caret-position="325">
+              <caret line="1420" column="54" lean-forward="true" selection-start-line="1420" selection-start-column="54" selection-end-line="1420" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -153,11 +152,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="1201" column="47" selection-start-line="1201" selection-start-column="47" selection-end-line="1201" selection-end-column="47" />
+            <state relative-caret-position="252">
+              <caret line="1384" column="62" selection-start-line="1384" selection-start-column="55" selection-end-line="1384" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -173,8 +172,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>public function subscribe($events)</find>
-      <find>#type</find>
       <find>dd(</find>
       <find>credit</find>
       <find>totalBalance</find>
@@ -203,6 +200,8 @@
       <find>$pet-&gt;breed-&gt;species-&gt;name</find>
       <find>Tratamiento</find>
       <find>formula_detail_product_id</find>
+      <find>$('#formula_detail_presentation').val(&quot;</find>
+      <find>create-formula-detail</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -260,8 +259,8 @@
         <option value="$PROJECT_DIR$/resources/views/admin/_layouts/partials/left-sidebar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/purchaseOrders/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/clients/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/histories/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/histories/create.blade.php" />
       </list>
     </option>
   </component>
@@ -694,12 +693,12 @@
       <workItem from="1543498452351" duration="12996000" />
       <workItem from="1543763924371" duration="765000" />
       <workItem from="1543766165045" duration="14334000" />
-      <workItem from="1543928518548" duration="929000" />
+      <workItem from="1543928518548" duration="1327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="581683000" />
+    <option name="totallyTimeSpent" value="582081000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1098,17 +1097,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="1222" column="23" lean-forward="true" selection-start-line="1222" selection-start-column="23" selection-end-line="1222" selection-end-column="23" />
+        <state relative-caret-position="252">
+          <caret line="1384" column="62" selection-start-line="1384" selection-start-column="55" selection-end-line="1384" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="1201" column="47" selection-start-line="1201" selection-start-column="47" selection-end-line="1201" selection-end-column="47" />
+        <state relative-caret-position="325">
+          <caret line="1420" column="54" lean-forward="true" selection-start-line="1420" selection-start-column="54" selection-end-line="1420" selection-end-column="54" />
         </state>
       </provider>
     </entry>
