@@ -2,586 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b7b9d3b-f187-419f-b1b3-a50ecb95a897" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2018_02_07_152551_create_deposits_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/_layouts/partials/warningBalance.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/areas/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/areas/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/areas/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/areas/partials/actions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/areas/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/balances/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/balances/partials/actions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/balances/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/partials/actions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/credits/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/credits/partials/actions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/deposits/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/deposits/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/deposits/partials/actions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/deposits/print.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/deposits/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/expenseTypes/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/expenseTypes/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/expenseTypes/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/expenseTypes/partials/actions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/expenses/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/expenses/partials/actions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/histories/partials/vaccineForm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/purchaseOrders/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/purchaseOrders/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/purchaseOrders/partials/actions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/purchaseOrders/partials/depositsUnassigned.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/after.sh" beforeDir="false" afterPath="$PROJECT_DIR$/after.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aliases" beforeDir="false" afterPath="$PROJECT_DIR$/aliases" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Balance.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Balance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Breed.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Breed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ClinicExam.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ClinicExam.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ComplementaryExam.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ComplementaryExam.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Credit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Credit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Deposit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Deposit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DetailEngagement.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DigestiveSystem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DigestiveSystem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Dosage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dosage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Engagement.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Engagement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Expense.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Expense.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Formula.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Formula.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/FormulaDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/FormulaDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/GenitourinarySystem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/GenitourinarySystem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/History.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/History.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/HistoryEngagement.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/HistoryEngagement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/DetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/DetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Engagement/EngagementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Engagement/EngagementController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Engagement/EngagementEngagementDetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Engagement/EngagementEngagementDetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Engagement/EngagementHistoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Engagement/EngagementHistoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Engagement/EngagementPurchaseOrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Engagement/EngagementPurchaseOrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EngagementController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Formula/FormulaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Formula/FormulaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Formula/FormulaFormulaDetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Formula/FormulaFormulaDetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/FormulaDetail/FormulaDetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/FormulaDetail/FormulaDetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/History/HistoryClinicExamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/History/HistoryClinicExamController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/History/HistoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/History/HistoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/History/HistoryEngagementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/History/HistoryEngagementController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/History/HistoryEngagementHistoryEngagementController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/History/HistoryFormulaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/History/HistoryFormulaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PurchaseOrder/PurchaseOrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PurchaseOrder/PurchaseOrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PurchaseOrder/PurchaseOrderPurchaseOrderDetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PurchaseOrder/PurchaseOrderPurchaseOrderDetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PurchaseOrderDetail/PurchaseOrderDetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PurchaseOrderDetail/PurchaseOrderDetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BalanceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BalanceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BreedController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BreedController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CreditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CreditController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepositController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepositController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DetailEngagementController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DosageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DosageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EngagementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EngagementController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExpenseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExpenseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HistoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HistoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InvoiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InvoiceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NeighborhoodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NeighborhoodController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OccupationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OccupationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProviderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProviderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PurchaseOrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PurchaseOrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuotationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuotationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ServiceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SpeciesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SpeciesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StockController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StockController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreEngagementRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreEngagementRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Invoice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MuscleSystem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MuscleSystem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Neighborhood.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Neighborhood.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/NervousSystem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/NervousSystem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Occupation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Occupation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/OrgansSenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/OrgansSenses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Pet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Pet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Provider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Provider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/PurchaseOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PurchaseOrder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Quotation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Quotation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/RespiratorySystem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RespiratorySystem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SkinAnnexes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SkinAnnexes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Species.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Species.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/State.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/State.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Stock.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Stock.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/broadcasting.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/database/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/BalanceFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/BalanceFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/BreedFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/BreedFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CategoryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ClientFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ClientFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CreditFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CreditFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/DepositFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/DepositFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/DetailEngagementFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/DetailFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/DetailFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/DosageFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/DosageFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/EngagementFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/EngagementFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ExpenseFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ExpenseFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/FormulaDetailFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/FormulaDetailFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/FormulaFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/FormulaFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/HistoryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/HistoryFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/InvoiceFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/InvoiceFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/NeighborhoodFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/NeighborhoodFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/OccupationFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/OccupationFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PetFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PetFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ProductFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProductFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ProviderFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProviderFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PurchaseOrderFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PurchaseOrderFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/QuotationFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/QuotationFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ServiceFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ServiceFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/SpeciesFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SpeciesFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/StateFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/StateFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/StockFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/StockFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_11_000000_create_states_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_11_000000_create_states_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_11_000001_create_occupations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_11_000001_create_occupations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222231_create_neighborhoods_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222231_create_neighborhoods_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222232_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222232_create_clients_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222233_create_species_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222233_create_species_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222234_create_breeds_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222234_create_breeds_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222236_create_pets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222236_create_pets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222237_create_client_pet_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222237_create_client_pet_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222501_create_providers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222501_create_providers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222502_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222502_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222503_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222503_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222504_create_product_provider_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222504_create_product_provider_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222505_create_category_product_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222505_create_category_product_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222510_create_stocks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222510_create_stocks_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222703_create_services_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222703_create_services_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222704_create_service_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222704_create_service_user_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222705_create_engagements_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222705_create_engagements_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222706_create_detail_engagements_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222707_create_detail_engagement_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222707_create_detail_engagement_user_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222735_create_balances_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222735_create_balances_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222736_create_histories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222736_create_histories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222737_create_respiratory_systems_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222737_create_respiratory_systems_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222738_create_digestive_systems_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222738_create_digestive_systems_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222739_create_genitourinary_systems_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222739_create_genitourinary_systems_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222740_create_nervous_systems_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222740_create_nervous_systems_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222741_create_muscle_systems_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222741_create_muscle_systems_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222742_create_organs_senses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222742_create_organs_senses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_222743_create_skin_annexes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_222743_create_skin_annexes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_310129_create_clinic_exams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_310129_create_clinic_exams_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_325040_create_complementary_exams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_325040_create_complementary_exams_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_325041_create_formulas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_325041_create_formulas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_325042_create_formula_details_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_325042_create_formula_details_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_06_325043_create_history_engagements_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_06_325043_create_history_engagements_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_07_150110_create_deposits_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_07_150137_create_quotations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_07_150137_create_quotations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_07_150221_create_invoices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_07_150221_create_invoices_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_07_152550_create_purchase_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_07_152550_create_purchase_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_07_152639_create_details_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_07_152639_create_details_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_07_152640_create_dosages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_07_152640_create_dosages_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_07_152921_create_credits_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_07_152921_create_credits_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_02_07_153134_create_expenses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_02_07_153134_create_expenses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BreedsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BreedsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ClientsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ClientsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/EngagementsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/EngagementsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/NeighborhoodsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/NeighborhoodsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/OccupationsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/OccupationsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/PetsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PetsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ProductsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ProductsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ProvidersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ProvidersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ServicesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ServicesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/SpeciesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SpeciesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/StatesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/StatesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/StocksTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/StocksTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/appointment-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/appointment-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lang/DataTableSpanish.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/lang/DataTableSpanish.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap-theme.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap-theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap-theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/bootstrap-3.3.7/js/npm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/CHANGELOG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/CHANGELOG.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/CONTRIBUTING.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/CONTRIBUTING.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/agenda-views.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/agenda-views.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/background-events.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/background-events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/basic-views.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/basic-views.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/external-dragging.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/external-dragging.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/gcal.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/gcal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/js/theme-chooser.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/js/theme-chooser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/json.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/json.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/json/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/json/events.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/list-views.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/list-views.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/locales.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/locales.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/php/get-events.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/php/get-events.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/php/get-timezones.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/php/get-timezones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/php/utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/php/utils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/selectable.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/selectable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/themes.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/themes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/timezones.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/timezones.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/week-numbers.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/demos/week-numbers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.print.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.print.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.print.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/fullcalendar.print.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/gcal.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/gcal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/gcal.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/gcal.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/lib/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/lib/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/lib/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/lib/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/lib/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/lib/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale-all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-dz.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-dz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-kw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-kw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-ly.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-ly.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-ma.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-ma.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-sa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-sa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-tn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar-tn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/de-at.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/de-at.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/de-ch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/en-au.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/en-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/en-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/en-gb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/en-ie.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/en-ie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/en-nz.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/en-nz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/es-do.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/es-do.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/es-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/es-us.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/fr-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/fr-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/fr-ch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ka.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/kk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/kk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/lb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/lb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ms-my.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ms-my.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/nl-be.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/nl-be.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/nn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/nn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/pt-br.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sr-cyrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sr-cyrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/zh-cn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/zh-tw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar-last/locale/zh-tw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/CHANGELOG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/CHANGELOG.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/CONTRIBUTING.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/CONTRIBUTING.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/agenda-views.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/agenda-views.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/background-events.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/background-events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/basic-views.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/basic-views.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/external-dragging.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/external-dragging.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/gcal.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/gcal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/js/theme-chooser.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/js/theme-chooser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/json.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/json.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/json/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/json/events.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/list-views.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/list-views.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/locales.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/locales.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/php/get-events.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/php/get-events.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/php/get-timezones.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/php/get-timezones.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/php/utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/php/utils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/selectable.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/selectable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/themes.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/themes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/timezones.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/timezones.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/week-numbers.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/demos/week-numbers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.print.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.print.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.print.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.print.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/gcal.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/gcal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/gcal.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/gcal.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/lib/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/lib/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/lib/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/lib/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/lib/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/lib/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale-all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-dz.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-dz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-kw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-kw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-ly.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-ly.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-ma.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-ma.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-sa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-sa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-tn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar-tn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/de-at.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/de-at.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/de-ch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/en-au.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/en-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/en-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/en-gb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/en-ie.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/en-ie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/en-nz.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/en-nz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/es-do.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/es-do.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/es-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/es-us.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/fr-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/fr-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/fr-ch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ka.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/kk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/kk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/lb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/lb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ms-my.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ms-my.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/nl-be.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/nl-be.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/nn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/nn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/pt-br.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sr-cyrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sr-cyrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/zh-cn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/zh-tw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/locale/zh-tw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/moment/moment-with-locales.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/moment/moment-with-locales.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/components/ClientSelectComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/components/ClientSelectComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/components/ExampleComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/components/PetSelectComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/components/PetSelectComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/es/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/es/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es/pagination.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/es/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es/passwords.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/es/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_layouts/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_layouts/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_layouts/partials/left-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_layouts/partials/left-sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_layouts/partials/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_layouts/partials/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_layouts/partials/right-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_layouts/partials/right-sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_layouts/simple.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_layouts/simple.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/breeds/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/breeds/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/breeds/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/breeds/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/clients/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/clients/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/clients/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/clients/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/clients/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/clients/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/clients/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/clients/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/credits/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/credits/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/deposits/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/deposits/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/engagements/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/engagements/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/engagements/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/engagements/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/engagements/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/engagements/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/engagements/partials/popoverTemplate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/engagements/partials/popoverTemplate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/engagements/partials/tdEngagementTemplate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/engagements/partials/tdEngagementTemplate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/engagements/partials/trEngagementTemplate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/engagements/partials/trEngagementTemplate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/engagements/print.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/engagements/print.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/expenses/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/expenses/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/histories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/histories/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/histories/partials/tableFormulaTemplate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/histories/partials/tableFormulaTemplate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/histories/partials/trFormulaTemplate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/histories/partials/trFormulaTemplate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/histories/partials/trPurchaseOrderTemplate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/histories/partials/trPurchaseOrderTemplate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/invoices/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/partials/searchSelect.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/partials/searchSelect.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pets/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pets/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pets/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pets/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/providers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/providers/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/providers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/providers/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/providers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/providers/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/quotations/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/quotations/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/species/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/species/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/species/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/species/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/species/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/species/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/species/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/species/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/stocks/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/stocks/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/stocks/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/stocks/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/fonts/5b598a4165a48dad9f0ff93d858156b9.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/storage/fonts/5b598a4165a48dad9f0ff93d858156b9.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/fonts/5b598a4165a48dad9f0ff93d858156b9.ufm" beforeDir="false" afterPath="$PROJECT_DIR$/storage/fonts/5b598a4165a48dad9f0ff93d858156b9.ufm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/fonts/Helvetica-Bold.afm.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/fonts/Helvetica-Bold.afm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/fonts/Helvetica.afm.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/fonts/Helvetica.afm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/fonts/Times-Roman.afm.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/fonts/Times-Roman.afm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/fonts/dompdf_font_family_cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/fonts/dompdf_font_family_cache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/testing/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/testing/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -650,10 +73,10 @@
     <session id="-388833742">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="59" />
+          <entry key="project.closed" value="60" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="4" />
-          <entry key="project.open.time.11" value="5" />
+          <entry key="project.open.time.11" value="6" />
           <entry key="project.open.time.12" value="8" />
           <entry key="project.open.time.13" value="5" />
           <entry key="project.open.time.14" value="5" />
@@ -668,7 +91,7 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="65" />
+          <entry key="project.opened" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -683,11 +106,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="2" />
-          <entry key="Blade" value="245" />
+          <entry key=".env file" value="3" />
+          <entry key="Blade" value="247" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="543" />
+          <entry key="PHP" value="544" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -702,7 +125,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="5" />
-          <entry key="Blade" value="12218" />
+          <entry key="Blade" value="12219" />
           <entry key="JavaScript" value="1" />
           <entry key="PHP" value="7424" />
           <entry key="PLAIN_TEXT" value="18" />
@@ -712,20 +135,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="590" column="30" selection-start-line="590" selection-start-column="30" selection-end-line="590" selection-end-column="30" />
+            <state relative-caret-position="312">
+              <caret line="1222" column="23" lean-forward="true" selection-start-line="1222" selection-start-column="23" selection-end-line="1222" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="537" column="26" lean-forward="true" selection-start-line="537" selection-start-column="26" selection-end-line="537" selection-end-column="26" />
+            <state relative-caret-position="372">
+              <caret line="1201" column="47" selection-start-line="1201" selection-start-column="47" selection-end-line="1201" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -741,9 +173,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>initializeProductSelect</find>
-      <find>taxPer</find>
-      <find>console.log(</find>
       <find>public function subscribe($events)</find>
       <find>#type</find>
       <find>dd(</find>
@@ -771,6 +200,9 @@
       <find>category: 'se</find>
       <find>category:'se</find>
       <find>aún no</find>
+      <find>$pet-&gt;breed-&gt;species-&gt;name</find>
+      <find>Tratamiento</find>
+      <find>formula_detail_product_id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -815,7 +247,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/species/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/clients/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/clients/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/clients/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/pets/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/pets/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/species/edit.blade.php" />
@@ -828,6 +259,7 @@
         <option value="$PROJECT_DIR$/resources/views/admin/purchaseOrders/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/_layouts/partials/left-sidebar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/purchaseOrders/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/clients/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/histories/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php" />
       </list>
@@ -953,6 +385,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -991,15 +424,6 @@
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="Api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maray" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maray" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-              <item name="History" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="maray" type="b2602c69:ProjectViewProjectNode" />
@@ -1058,7 +482,24 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maray" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maray" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="histories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maray" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maray" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="histories" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="maray" type="b2602c69:ProjectViewProjectNode" />
@@ -1069,7 +510,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1253,12 +693,13 @@
       <workItem from="1543498382651" duration="22000" />
       <workItem from="1543498452351" duration="12996000" />
       <workItem from="1543763924371" duration="765000" />
-      <workItem from="1543766165045" duration="12940000" />
+      <workItem from="1543766165045" duration="14334000" />
+      <workItem from="1543928518548" duration="929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="579360000" />
+    <option name="totallyTimeSpent" value="581683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1273,7 +714,7 @@
     <frame x="1280" y="0" width="1366" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1858006" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17598188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -1326,20 +767,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/deposits/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="84" column="8" selection-start-line="43" selection-end-line="84" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DataTable/AreaCategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="e#50#63#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1354,9 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-436">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="e#1731#1749#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1402,13 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/History/HistoryEngagementController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1430,13 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1479,9 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
           <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="51" selection-end-column="103" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1590,13 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/clients/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/clients/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1646,10 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#select#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1657,10 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#select#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1678,17 +1074,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="537" column="26" lean-forward="true" selection-start-line="537" selection-start-column="26" selection-end-line="537" selection-end-column="26" />
+        <state relative-caret-position="330">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/partials/tableFormulaTemplate.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/clients/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="144" column="37" lean-forward="true" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="590" column="30" selection-start-line="590" selection-start-column="30" selection-end-line="590" selection-end-column="30" />
+        <state relative-caret-position="312">
+          <caret line="1222" column="23" lean-forward="true" selection-start-line="1222" selection-start-column="23" selection-end-line="1222" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/histories/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="1201" column="47" selection-start-line="1201" selection-start-column="47" selection-end-line="1201" selection-end-column="47" />
         </state>
       </provider>
     </entry>

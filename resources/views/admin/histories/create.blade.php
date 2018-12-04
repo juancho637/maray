@@ -1224,8 +1224,7 @@
                     url: "{{ route('api.products.index') }}",
                     data: function (params) {
                         return {
-                            search: params.term,
-                            category: 'pharmacy'
+                            search: params.term
                         };
                     },
                     processResults: function (data, params) {
