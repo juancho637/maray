@@ -44,21 +44,24 @@
                         </div>
                     </div>
                     <div class="col-xs-4">
-                        <div class="form-group">
-                            <label>Efectivo:</label>
-                            <input type="number" id="identification" name="cash" class="form-control"/>
+                        <div class="form-group {{ $errors->has('cash') ? 'has-error' : '' }}">
+                            <label for="cash">Efectivo:</label>
+                            <input type="number" id="cash" name="cash" class="form-control"/>
+                            {!! $errors->first('cash', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
                     <div class="col-xs-4">
-                        <div class="form-group">
-                            <label>Cheque:</label>
-                            <input type="number" id="identification" name="cheque" class="form-control"/>
+                        <div class="form-group {{ $errors->has('cheque') ? 'has-error' : '' }}">
+                            <label for="cheque">Cheque:</label>
+                            <input type="number" id="cheque" name="cheque" class="form-control"/>
+                            {!! $errors->first('cheque', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
                     <div class="col-xs-4">
-                        <div class="form-group">
-                            <label>Tarjeta:</label>
-                            <input type="number" id="identification" name="card" class="form-control"/>
+                        <div class="form-group {{ $errors->has('card') ? 'has-error' : '' }}">
+                            <label for="card">Tarjeta:</label>
+                            <input type="number" id="card" name="card" class="form-control"/>
+                            {!! $errors->first('card', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
                     <div class="col-xs-12">

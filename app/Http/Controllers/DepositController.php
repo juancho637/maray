@@ -37,6 +37,13 @@ class DepositController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'client_id' => 'required|exists:clients,id',
+            'cash' => 'required_without_all:cash,cheque,card',
+            'cheque' => 'required_without_all:cash,cheque,card',
+            'card' => 'required_without_all:cash,cheque,card',
+        ]);
+
         $lastBalance = Auth::user()->balances()->lastBalance();
 
         if (Auth::user()->balances->isEmpty()){
