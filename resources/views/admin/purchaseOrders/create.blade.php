@@ -120,31 +120,39 @@
                             </div>
                         </div>
                     </div>
-                    <div id="purchase">
+                </div>
+                <div id="purchase">
+                    <div class="row">
                         <div class="col-xs-12 col-md-3">
-                            <div class="form-group">
-                                <label>Efectivo:</label>
-                                <input type="number" name="cash" id="cash" class="form-control"/>
+                            <div class="form-group {{ $errors->has('cash') ? 'has-error' : '' }}">
+                                <label for="cash">Efectivo:</label>
+                                <input type="number" name="cash" id="cash" value="{{ old('cash') }}" class="form-control"/>
+                                {!! $errors->first('cash', '<span class="help-block">:message</span>') !!}
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-3">
-                            <div class="form-group">
-                                <label>Cheque:</label>
-                                <input type="number" name="cheque" id="cheque" class="form-control"/>
+                            <div class="form-group {{ $errors->has('cheque') ? 'has-error' : '' }}">
+                                <label for="cheque">Cheque:</label>
+                                <input type="number" name="cheque" id="cheque" value="{{ old('cheque') }}" class="form-control"/>
+                                {!! $errors->first('cheque', '<span class="help-block">:message</span>') !!}
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-3">
-                            <div class="form-group">
-                                <label>Tarjeta:</label>
-                                <input type="number" name="card" id="card" class="form-control"/>
+                            <div class="form-group {{ $errors->has('card') ? 'has-error' : '' }}">
+                                <label for="card">Tarjeta:</label>
+                                <input type="number" name="card" id="card" value="{{ old('card') }}" class="form-control"/>
+                                {!! $errors->first('card', '<span class="help-block">:message</span>') !!}
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-3">
-                            <div class="form-group">
-                                <label>Crédito:</label>
-                                <input type="number" name="credit" id="credit" class="form-control"/>
+                            <div class="form-group {{ $errors->has('credit') ? 'has-error' : '' }}">
+                                <label for="credit">Crédito:</label>
+                                <input type="number" name="credit" id="credit" value="{{ old('credit') }}" class="form-control"/>
+                                {!! $errors->first('credit', '<span class="help-block">:message</span>') !!}
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-xs-12 col-md-4">
                             <div class="form-group">
                                 <label>Depósito asignado:</label>

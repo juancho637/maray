@@ -24,8 +24,14 @@ class StorePurchaseOrderRequest extends FormRequest
     public function rules()
     {
         $rules['client_id'] = 'required|exists:clients,id';
+        $rules['expires'] = 'required';
+        $rules['client_id'] = 'required|exists:clients,id';
         $rules['products'] = 'required|array|min:1';
         $rules['products.product_id'] = 'exists:products,id';
+        $rules['cash'] = 'required_without_all:cheque,card,credit';
+        $rules['cheque'] = 'required_without_all:cash,card,credit';
+        $rules['card'] = 'required_without_all:cash,cheque,credit';
+        $rules['credit'] = 'required_without_all:cash,cheque,card';
 
         if ($this->input('type') !== 'quotation') {
             $rules['outstandingBalance'] = 'required|in:0';

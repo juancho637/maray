@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Balance;
 use App\Deposit;
 use App\Events\ExpenseWasCreated;
+use App\Events\InvoiceWasCreated;
 use App\Events\PurchaseOrderWasCreated;
 use App\Http\Requests\StorePurchaseOrderRequest;
 use App\Product;
@@ -157,6 +158,15 @@ class PurchaseOrderController extends Controller
                 $purchaseOrderFields['card'],
                 $purchaseOrderFields['totalBalance']
             );
+
+            if ($request->type === 'invoice'){
+                InvoiceWasCreated::dispatch(
+                    $purchaseOrderFields['cash'],
+                    $purchaseOrderFields['cheque'],
+                    $purchaseOrderFields['card'],
+                    $purchaseOrderFields['totalBalance']
+                );
+            }
         }
 
         if ($purchaseOrderFields['positiveBalance'] > 0){
@@ -198,17 +208,20 @@ class PurchaseOrderController extends Controller
      */
     public function edit(PurchaseOrder $purchaseOrder)
     {
-        if ($purchaseOrder->type !== 'quotation'){
-            return redirect()->route('purchaseOrders.index')->with('warning', 'El recurso al que intentas acceder no es una cotización.');
+        if ($purchaseOrder->type !== null){
+            if ($purchaseOrder->type !== 'quotation'){
+                return redirect()->route('purchaseOrders.index')->with('warning', 'No tienes acceso al recurso que intentas acceder.');
+            }
         }
+
         return view('admin.purchaseOrders.edit', compact('purchaseOrder'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\PurchaseOrder  $purchaseOrder
+     * @param StorePurchaseOrderRequest $request
+     * @param  \App\PurchaseOrder $purchaseOrder
      * @return \Illuminate\Http\Response
      */
     public function update(StorePurchaseOrderRequest $request, PurchaseOrder $purchaseOrder)
@@ -260,7 +273,7 @@ class PurchaseOrderController extends Controller
 
         //dd($purchaseOrderFields);
 
-        $purchaseOrder = $purchaseOrder->update($purchaseOrderFields);
+        $purchaseOrder->update($purchaseOrderFields);
 
         if ($purchaseOrderFields['credit'] > 0){
             $purchaseOrder->credit()->create([
@@ -280,6 +293,7 @@ class PurchaseOrderController extends Controller
             }
         }
 
+        $purchaseOrder->details()->delete();
         foreach ($request->products as $product){
             $item = Product::find($product['product_id']);
             $purchaseOrderDetailField = [
@@ -314,6 +328,15 @@ class PurchaseOrderController extends Controller
                 $purchaseOrderFields['card'],
                 $purchaseOrderFields['totalBalance']
             );
+
+            if ($request->type === 'invoice'){
+                InvoiceWasCreated::dispatch(
+                    $purchaseOrderFields['cash'],
+                    $purchaseOrderFields['cheque'],
+                    $purchaseOrderFields['card'],
+                    $purchaseOrderFields['totalBalance']
+                );
+            }
         }
 
         if ($purchaseOrderFields['positiveBalance'] > 0){
@@ -330,7 +353,7 @@ class PurchaseOrderController extends Controller
         }
 
         //return redirect()->route('engagements.index')->with('flash', 'Cita creada correctamente, <a target="_blank" href="'. route("engagements.print", $engagement->id) .'">Imprimela</a>');
-        return redirect()->route('purchaseOrders.index')->with('flash', $message.' actualizada correctamente');
+        return redirect()->route('purchaseOrders.index')->with('flash', $message.' actualizada correctamente.');
     }
 
     /**
