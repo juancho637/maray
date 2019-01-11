@@ -87,6 +87,7 @@
                 "language": {
                     "info": "_TOTAL_ registros",
                     "search": "Buscar",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
                     "paginate": {
                         "next": "Siguiente",
                         "previous": "Anterior"
