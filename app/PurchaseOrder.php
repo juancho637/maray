@@ -122,28 +122,36 @@ class PurchaseOrder extends Model
     public function setCashAttribute($cash)
     {
         if($cash === null){
-            $this->attributes['cash'] =  0;
+            $this->attributes['cash'] = 0;
+        }else{
+            $this->attributes['cash'] = $cash;
         }
     }
 
     public function setChequeAttribute($cheque)
     {
         if($cheque === null){
-            $this->attributes['cheque'] =  0;
+            $this->attributes['cheque'] = 0;
+        }else{
+            $this->attributes['cheque'] = $cheque;
         }
     }
 
     public function setCardAttribute($card)
     {
         if($card === null){
-            $this->attributes['card'] =  0;
+            $this->attributes['card'] = 0;
+        }else{
+            $this->attributes['card'] = $card;
         }
     }
 
     public function setCreditAttribute($credit)
     {
         if($credit === null){
-            $this->attributes['credit'] =  0;
+            $this->attributes['credit'] = 0;
+        }else{
+            $this->attributes['credit'] = $credit;
         }
     }
 
