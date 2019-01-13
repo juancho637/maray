@@ -7,7 +7,8 @@
 @section('description', 'Página para gestión de productos y servicios')
 
 @push('styles')
-
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('/plugins/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
 @endpush
 
 @section('content')
@@ -21,9 +22,10 @@
             </div>
         </div>
         <div class="box-body table-responsive">
-            <table class="table table-striped" id="products-table">
+            <table class="table table-striped" id="products" style="width:100%">
                 <thead>
                     <tr>
+                        <th>Id</th>
                         <th>Nombre</th>
                         <th>Precio</th>
                         <th>Impuestos</th>
@@ -33,48 +35,48 @@
                         <th>Acciones</th>
                     </tr>
                 </thead>
-                <tbody>
-                    @foreach($products as $product)
-                        <tr>
-                            <td>{{ $product->name }}</td>
-                            <td>$ {{ number_format($product->value) }}</td>
-                            <td>{{ $product->tax_percentage }}%</td>
-                            <td>{{ ucwords($product->type) }}</td>
-                            <td>{{ $product->description }}</td>
-                            <td>{{ $product->state->name }}</td>
-                            @if(isset($product->deleted_at))
-                                <td>
-                                    <a href="#" class="btn btn-xs btn-info">Restaurar producto</a>
-                                </td>
-                            @else
-                                <td>
-                                    <a href="{{ route('products.show', $product) }}" class="btn btn-xs btn-info"><i class="fa fa-eye"></i></a>
-                                    <a href="{{ route('products.edit', $product) }}" class="btn btn-xs btn-warning"><i class="fa fa-pencil"></i></a>
-                                    <form method="POST" action="{{ route('products.destroy', $product) }}" style="display: inline">
-                                        {{ csrf_field() }}
-                                        {{ method_field('DELETE') }}
-                                        <button type="submit"
-                                                onclick="return confirm('¿Estas seguro de querer eliminar este producto/servicio?')"
-                                                class="btn btn-xs btn-danger">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                    </form>
-                                </td>
-                            @endif
-                        </tr>
-                    @endforeach
-                </tbody>
             </table>
         </div>
-        <center>{{ $products->links() }}</center>
     </div>
 @endsection
 
 @push('scripts')
+    <!-- DataTables -->
+    <script src="{{ asset('/plugins/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/plugins/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
     <!-- Code -->
     <script>
         $(function () {
-
+            $('#products').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: "{{ route('datatable.products.index') }}",
+                columns: [
+                    {data: 'id'},
+                    {data: 'name'},
+                    {data: 'value'},
+                    {data: 'tax_percentage'},
+                    {data: 'type'},
+                    {data: 'description'},
+                    {data: 'state.name'},
+                    {data: 'actions'},
+                ],
+                "language": {
+                    "info": "_TOTAL_ registros",
+                    "search": "Buscar",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "paginate": {
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "emptyTable": "No hay datos",
+                    "zeroRecords": "No hay coinsidencias",
+                    "infoEmpty": "",
+                    "infoFiltered": ""
+                }
+            });
         });
     </script>
 @endpush

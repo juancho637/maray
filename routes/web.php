@@ -18,16 +18,17 @@ Route::get('/', function () {
 Route::resource('engagements', 'EngagementController');
 Route::resource('engagement_details', 'DetailEngagementController');
 Route::get('engagements/{engagement}/print', 'EngagementController@print')->name('engagements.print');
-Route::resource('engagements.histories', 'HistoryController');
+Route::resource('engagements.histories', 'HistoryController', ['except'=>['show', 'index']]);
 Route::resource('engagements.purchase_orders', 'PurchaseOrderController');
 
 
 Route::group(['prefix' => 'finances', 'middleware' => ['auth']], function () {
-    
     Route::get('/', function () {
         return redirect()->route('purchaseOrders.index');
     });
     Route::resource('balances', 'BalanceController');
+    Route::get('balances/{balance}/print_order', 'BalanceController@printOrder')->name('balances.print_order');
+    Route::get('balances/{balance}/print_invoice', 'BalanceController@printInvoice')->name('balances.print_invoice');
     Route::resource('purchaseOrders', 'PurchaseOrderController');
     //Route::resource('invoices', 'InvoiceController');
     //Route::resource('quotations', 'QuotationController');
@@ -35,11 +36,13 @@ Route::group(['prefix' => 'finances', 'middleware' => ['auth']], function () {
     Route::resource('credits', 'CreditController');
     //Route::resource('credits.creditPayments', 'CreditPaymentController', ['only'=>['store']]);
     Route::resource('expenses', 'ExpenseController');
+});
 
+Route::group(['prefix' => 'reports', 'middleware' => ['auth']], function () {
+    Route::resource('histories', 'HistoryController', ['only'=>['show', 'index']]);
 });
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
-
     Route::get('/', function () {
         return redirect()->route('clients.index');
     });
@@ -54,11 +57,9 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::resource('products', 'ProductController');
     Route::resource('products.stocks', 'StockController', ['except'=>['index', 'show']]);
     Route::resource('users', 'UserController');
-
 });
 
 Route::group(['prefix' => 'api', 'middleware' => ['auth']], function () {
-
     Route::resource('clients', 'Api\ClientController', ['only'=>['index', 'show'], 'as'=>'api']);
     Route::resource('clients.deposits', 'Api\Client\ClientDepositController', ['only'=>['index'], 'as'=>'api']);
 
@@ -85,6 +86,7 @@ Route::group(['prefix' => 'api', 'middleware' => ['auth']], function () {
     Route::resource('history_engagement', 'Api\HistoryEngagement\HistoryEngagementController', ['only'=>['store'], 'as'=>'api']);
 });
 
+//Data Tables
 Route::group(['prefix' => 'datatable', 'middleware' => ['auth']], function () {
     Route::resource('deposits', 'DataTable\DepositController', ['only'=>['index'], 'as'=>'datatable']);
     Route::resource('balances', 'DataTable\BalanceController', ['only'=>['index'], 'as'=>'datatable']);
@@ -94,6 +96,8 @@ Route::group(['prefix' => 'datatable', 'middleware' => ['auth']], function () {
     Route::resource('expenseTypes', 'DataTable\ExpenseTypeController', ['only'=>['index'], 'as'=>'datatable']);
     Route::resource('areas', 'DataTable\AreaController', ['only'=>['index'], 'as'=>'datatable']);
     Route::resource('areas.categories', 'DataTable\AreaCategoryController', ['only'=>['index'], 'as'=>'datatable']);
+    Route::resource('histories', 'DataTable\HistoryController', ['only'=>['index'], 'as'=>'datatable']);
+    Route::resource('products', 'DataTable\ProductController', ['only'=>['index'], 'as'=>'datatable']);
 });
 
 
