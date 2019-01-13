@@ -170,6 +170,7 @@ return [
          */
         Barryvdh\DomPDF\ServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
+        Jenssegers\Date\DateServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -230,6 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'PDF' => Barryvdh\DomPDF\Facade::class,
+        'Date' => Jenssegers\Date\Date::class,
     ],
 
 ];
