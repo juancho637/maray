@@ -10,10 +10,12 @@
 @endif
 
 @if($detailEngagement->engagement->state->abbreviation === 'appoint-atten')
-    @if($detailEngagement->service->abbreviation === 'aesthetic')
-        <a type='button' href='{{ route("engagements.histories.create", $engagement->id) }}' class='btn label-warning btn-xs custom-margin'><i class='fa fa-check' aria-hidden='true'></i> Servicios</a>
-    @endif
-    @if($detailEngagement->service->abbreviation !== 'aesthetic')
-        <a type='button' href='{{ route("engagements.histories.create", $engagement->id) }}' class='btn label-success btn-xs custom-margin'><i class='fa fa-bookmark' aria-hidden='true'></i> Historia</a>
+    @if(Carbon\Carbon::parse($engagement->date)->format('d-m-Y') >= Carbon\Carbon::now()->format('d-m-Y'))
+        @if($detailEngagement->service->abbreviation === 'aesthetic')
+            <a type='button' href='{{ route("engagements.histories.create", $engagement->id) }}' class='btn label-warning btn-xs custom-margin'><i class='fa fa-check' aria-hidden='true'></i> Servicios</a>
+        @endif
+        @if($detailEngagement->service->abbreviation !== 'aesthetic')
+            <a type='button' href='{{ route("engagements.histories.create", $engagement->id) }}' class='btn label-success btn-xs custom-margin'><i class='fa fa-bookmark' aria-hidden='true'></i> Historia</a>
+        @endif
     @endif
 @endif

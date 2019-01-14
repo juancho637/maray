@@ -723,7 +723,7 @@
                     data: function (params) {
                         return {
                             search: params.term,
-                            category: 'services'
+                            area: 'procedimientos'
                         };
                     },
                     processResults: function (data, params) {
@@ -746,7 +746,7 @@
                     data: function (params) {
                         return {
                             search: params.term,
-                            category: 'surgery'
+                            area: 'cirugia'
                         };
                     },
                     processResults: function (data, params) {
@@ -769,7 +769,7 @@
                     data: function (params) {
                         return {
                             search: params.term,
-                            category: 'aesthetic'
+                            area: 'sala de estetica'
                         };
                     },
                     processResults: function (data, params) {

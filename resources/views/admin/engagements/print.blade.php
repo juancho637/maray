@@ -106,10 +106,15 @@
             </tbody>
         </table>
     @endif
-    <div id="notices" class="clearfix">
-        <div class="notice">Firma propietario</div>
-        <div class="invoice">Recibo de servicio No. {{ $engagement->id }}</div>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="clearfix notices">
+                <div class="notice">Firma propietario</div>
+                <div class="invoice">Recibo de servicio No. {{ $engagement->id }}</div>
+            </div>
+        </div>
     </div>
+
 </main>
 <!-- jQuery 3 -->
 <script src="{{ asset('/plugins/jquery/dist/jquery.min.js') }}"></script>

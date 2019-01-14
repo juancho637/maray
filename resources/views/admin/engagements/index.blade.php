@@ -116,7 +116,7 @@
                 </thead>
                 <tbody id="data-engagements">
                 @php($engagementCalendarSearch = false)
-                @include('admin.engagements.partials.trEngagementTemplate', compact('engagement', 'engagementCalendarSearch'))
+                @include('admin.engagements.partials.trEngagementTemplate', compact('engagements', 'engagementCalendarSearch'))
                 </tbody>
             </table>
         </div>
