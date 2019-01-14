@@ -21,12 +21,11 @@ class HistoryController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @param  Engagement $engagement
-     * @return void
+     * @return \Illuminate\Http\Response
      */
-    public function index(Engagement $engagement)
+    public function index()
     {
-        //
+        return view('admin.histories.index');
     }
 
     /**
@@ -79,7 +78,11 @@ class HistoryController extends Controller
      */
     public function edit(Engagement $engagement, History $history)
     {
-        return view('admin.histories.edit', compact('engagement', 'history'));
+        if ($engagement->history->id === $history->id){
+            return view('admin.histories.edit', compact('engagement', 'history'));
+        }else{
+            abort(404);
+        }
     }
 
     /**

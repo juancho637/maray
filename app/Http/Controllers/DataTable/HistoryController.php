@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\DataTable;
 
-use App\Area;
+use App\History;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Yajra\DataTables\Facades\DataTables;
 
-class AreaController extends Controller
+class HistoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +17,8 @@ class AreaController extends Controller
      */
     public function index()
     {
-        return DataTables::of(Area::with('state'))
-            ->addColumn('actions', 'admin.areas.partials.actions')
+        return DataTables::of(History::with('engagement.client', 'engagement.pet'))
+            ->addColumn('actions', 'admin.histories.partials.actions')
             ->rawColumns(['actions'])
             ->toJson();
     }
@@ -47,10 +47,10 @@ class AreaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Area  $area
+     * @param  \App\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function show(Area $area)
+    public function show(History $history)
     {
         //
     }
@@ -58,10 +58,10 @@ class AreaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Area  $area
+     * @param  \App\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function edit(Area $area)
+    public function edit(History $history)
     {
         //
     }
@@ -70,10 +70,10 @@ class AreaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Area  $area
+     * @param  \App\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Area $area)
+    public function update(Request $request, History $history)
     {
         //
     }
@@ -81,10 +81,10 @@ class AreaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Area  $area
+     * @param  \App\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Area $area)
+    public function destroy(History $history)
     {
         //
     }
