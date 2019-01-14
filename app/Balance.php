@@ -2,28 +2,48 @@
 
 namespace App;
 
+use App\Traits\DatesTranslator;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 
+/**
+ * @property mixed state_id
+ */
 class Balance extends Model
 {
+    use DatesTranslator;
+
     protected $fillable = [
         'user_id',
         'state_id',
-        'system_cash',
-        'system_cheque',
-        'system_card',
-        'system_credit',
-        'system_credit_payment',
-        'system_expenditure',
-        'system_total',
+        'delivery_balance_to',
+
+        'system_global_cash',
+        'system_global_cheque',
+        'system_global_card',
+        'system_global_total',
+
+        'system_real_cash',
+        'system_real_cheque',
+        'system_real_card',
+        'system_real_expenditure',
+        'system_real_total',
+
+        'system_invoice_cash',
+        'system_invoice_cheque',
+        'system_invoice_card',
+        'system_invoice_total',
+
         'manual_cash',
         'manual_cheque',
         'manual_card',
-        'manual_credit',
-        'manual_credit_payment',
         'manual_expenditure',
         'manual_total',
+
+        'manual_invoice_cash',
+        'manual_invoice_cheque',
+        'manual_invoice_card',
+        'manual_invoice_total',
     ];
 
     /**
@@ -80,6 +100,78 @@ class Balance extends Model
      */
     public function creditPayments(){
         return $this->hasMany(CreditPayment::class);
+    }
+
+    public function setManualInvoiceCashAttribute($value){
+        if ($value === null){
+            $this->attributes['manual_invoice_cash'] =  0;
+        }else{
+            $this->attributes['manual_invoice_cash'] = $value;
+        }
+    }
+
+    public function setManualInvoiceChequeAttribute($value){
+        if ($value === null){
+            $this->attributes['manual_invoice_cheque'] =  0;
+        }else{
+            $this->attributes['manual_invoice_cheque'] = $value;
+        }
+    }
+
+    public function setManualInvoiceCardAttribute($value){
+        if ($value === null){
+            $this->attributes['manual_invoice_card'] =  0;
+        }else{
+            $this->attributes['manual_invoice_card'] = $value;
+        }
+    }
+
+    public function setManualInvoiceTotalAttribute($value){
+        if ($value === null){
+            $this->attributes['manual_invoice_total'] =  0;
+        }else{
+            $this->attributes['manual_invoice_total'] = $value;
+        }
+    }
+
+    public function setManualCashAttribute($value){
+        if ($value === null){
+            $this->attributes['manual_cash'] =  0;
+        }else{
+            $this->attributes['manual_cash'] = $value;
+        }
+    }
+
+    public function setManualChequeAttribute($value){
+        if ($value === null){
+            $this->attributes['manual_cheque'] =  0;
+        }else{
+            $this->attributes['manual_cheque'] = $value;
+        }
+    }
+
+    public function setManualCardAttribute($value){
+        if ($value === null){
+            $this->attributes['manual_card'] =  0;
+        }else{
+            $this->attributes['manual_card'] = $value;
+        }
+    }
+
+    public function setManualExpenditureAttribute($value){
+        if ($value === null){
+            $this->attributes['manual_expenditure'] =  0;
+        }else{
+            $this->attributes['manual_expenditure'] = $value;
+        }
+    }
+
+    public function setManualTotalAttribute($value){
+        if ($value === null){
+            $this->attributes['manual_total'] =  0;
+        }else{
+            $this->attributes['manual_total'] = $value;
+        }
     }
 
     public function scopeAllowed($query)

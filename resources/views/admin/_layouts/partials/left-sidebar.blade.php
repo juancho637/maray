@@ -26,6 +26,21 @@
                     <span>Citas</span>
                 </a>
             </li>
+            <li class="treeview {{ request()->is('reports*') ? 'active' : '' }}">
+                <a href="#">
+                    <i class="fa fa-book"></i>
+                    <span>Informes</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li {{ request()->is('reports/histories*') ? 'class=active' : '' }}>
+                        <a href="{{ route('histories.index') }}">Historias</a>
+                    </li>
+
+                </ul>
+            </li>
             <li class="treeview {{ request()->is('finances*') ? 'active' : '' }}">
                 <a href="#">
                     <i class="fa fa-bar-chart"></i>
@@ -48,7 +63,7 @@
                         <a href="{{ route('quotations.index') }}">Cotizaciones</a>
                     </li>--}}
                     <li {{ request()->is('finances/credits*') ? 'class=active' : '' }}>
-                        <a href="{{ route('credits.index') }}">Pago de créditos</a>
+                        <a href="{{ route('credits.index') }}">Créditos</a>
                     </li>
                     <li {{ request()->is('finances/expenses*') ? 'class=active' : '' }}>
                         <a href="{{ route('expenses.index') }}">Gastos</a>

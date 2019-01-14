@@ -2,12 +2,12 @@
 
 namespace App\Listeners;
 
-use App\Events\ExpenseWasCreated;
+use App\Events\InvoiceWasCreated;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Facades\Auth;
 
-class RemoveMoneyFromBalance
+class AddMoneyToInvoiceBalance
 {
     /**
      * Create the event listener.
@@ -22,18 +22,17 @@ class RemoveMoneyFromBalance
     /**
      * Handle the event.
      *
-     * @param  ExpenseWasCreated  $event
+     * @param  InvoiceWasCreated  $event
      * @return void
      */
-    public function handle($event)
+    public function handle(InvoiceWasCreated $event)
     {
         $balance = Auth::user()->balances()->lastBalance();
 
-        $balance->system_real_cash -= $event->cash;
-        $balance->system_real_cheque -= $event->cheque;
-        $balance->system_real_card -= $event->card;
-        $balance->system_real_expenditure += $event->total;
-        $balance->system_real_total -= $event->total;
+        $balance->system_invoice_cash += $event->cash;
+        $balance->system_invoice_cheque += $event->cheque;
+        $balance->system_invoice_card += $event->card;
+        $balance->system_invoice_total += $event->total;
 
         $balance->save();
     }

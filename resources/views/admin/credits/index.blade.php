@@ -1,10 +1,10 @@
 @extends('admin._layouts.main')
 
-@section('title', config('app.name').' | Pago de créditos')
+@section('title', config('app.name').' | Créditos')
 
-@section('header', 'Pago de créditos')
+@section('header', 'Créditos')
 
-@section('description', 'Página para el pago de créditos')
+@section('description', 'Página para gestión de créditos')
 
 @push('styles')
     <!-- DataTables -->

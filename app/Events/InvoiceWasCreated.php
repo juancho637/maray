@@ -10,7 +10,7 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class PurchaseOrderWasCreated
+class InvoiceWasCreated
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 

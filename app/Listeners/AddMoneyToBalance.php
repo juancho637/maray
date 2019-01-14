@@ -29,13 +29,15 @@ class AddMoneyToBalance
     {
         $balance = Auth::user()->balances()->lastBalance();
 
-        $balance->system_cash += $event->cash;
-        $balance->system_cheque += $event->cheque;
-        $balance->system_card += $event->card;
-        /*if (isset($event->credit)) {
-            $balance->system_credit += $event->credit;
-        }*/
-        $balance->system_total += $event->total;
+        $balance->system_real_cash += $event->cash;
+        $balance->system_real_cheque += $event->cheque;
+        $balance->system_real_card += $event->card;
+        $balance->system_real_total += $event->total;
+
+        $balance->system_global_cash += $event->cash;
+        $balance->system_global_cheque += $event->cheque;
+        $balance->system_global_card += $event->card;
+        $balance->system_global_total += $event->total;
 
         $balance->save();
     }

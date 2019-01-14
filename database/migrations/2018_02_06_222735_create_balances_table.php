@@ -17,24 +17,36 @@ class CreateBalancesTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('state_id')->unsigned()->default(1);
-            $table->integer('system_cash')->default(0);
-            $table->integer('system_cheque')->default(0);
-            $table->integer('system_card')->default(0);
-            $table->integer('system_expenditure')->default(0);
-            $table->integer('system_total')->default(0);
+
+            $table->integer('system_global_cash')->default(0);
+            $table->integer('system_global_cheque')->default(0);
+            $table->integer('system_global_card')->default(0);
+            $table->integer('system_global_total')->default(0);
+
+            $table->integer('system_real_cash')->default(0);
+            $table->integer('system_real_cheque')->default(0);
+            $table->integer('system_real_card')->default(0);
+            $table->integer('system_real_expenditure')->default(0);
+            $table->integer('system_real_total')->default(0);
+
             $table->integer('system_invoice_cash')->default(0);
             $table->integer('system_invoice_cheque')->default(0);
             $table->integer('system_invoice_card')->default(0);
             $table->integer('system_invoice_total')->default(0);
+
             $table->integer('manual_cash')->default(0);
             $table->integer('manual_cheque')->default(0);
             $table->integer('manual_card')->default(0);
             $table->integer('manual_expenditure')->default(0);
             $table->integer('manual_total')->default(0);
+
             $table->integer('manual_invoice_cash')->default(0);
             $table->integer('manual_invoice_cheque')->default(0);
             $table->integer('manual_invoice_card')->default(0);
             $table->integer('manual_invoice_total')->default(0);
+
+
+            $table->string('delivery_balance_to')->nullable();
             $table->timestamps();
 
             //Relations

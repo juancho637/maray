@@ -18,6 +18,7 @@ class BalanceController extends Controller
     public function index()
     {
         return DataTables::of(Balance::allowed()->with('state', 'user')->get())
+            ->editColumn('created_at', '{{ $created_at->format("d-m-Y h:i:s A") }}')
             ->addColumn('actions', 'admin.balances.partials.actions')
             ->rawColumns(['actions'])
             ->toJson();

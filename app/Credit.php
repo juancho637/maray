@@ -41,4 +41,11 @@ class Credit extends Model
     public function state(){
         return $this->belongsTo(State::class);
     }
+
+    public function scopeCreditInvoice($query)
+    {
+        return $query->whereHas('purchase_order', function ($query) {
+            $query->where('type', 'invoice');
+        });
+    }
 }

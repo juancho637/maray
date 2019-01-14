@@ -74,4 +74,13 @@ class CreditPayment extends Model
             $this->attributes['card'] =  $card;
         }
     }
+
+    public function scopeCreditInvoice($query)
+    {
+        return $query->whereHas('credit', function ($query) {
+            $query->whereHas('purchase_order', function ($query) {
+                $query->where('type', 'invoice');
+            });
+        });
+    }
 }

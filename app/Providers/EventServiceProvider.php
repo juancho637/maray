@@ -22,6 +22,9 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\PurchaseOrderWasCreated' => [
             'App\Listeners\AddMoneyToBalance',
         ],
+        'App\Events\InvoiceWasCreated' => [
+            'App\Listeners\AddMoneyToInvoiceBalance',
+        ],
         'App\Events\ExpenseWasCreated' => [
             'App\Listeners\RemoveMoneyFromBalance',
         ],

@@ -52,21 +52,21 @@ class ExpenseController extends Controller
             'description' => ['required'],
             'cash' => [
                 function ($attribute, $value, $fail) use ($lastBalance) {
-                    if ($value > $lastBalance->system_cash) {
+                    if ($value > $lastBalance->system_real_cash) {
                         $fail('No hay suficiente saldo en efectivo en la caja.');
                     }
                 },
             ],
             'card' => [
                 function ($attribute, $value, $fail) use ($lastBalance){
-                    if ($value > $lastBalance->system_card) {
+                    if ($value > $lastBalance->system_real_card) {
                         $fail('No hay suficiente saldo en tarjeta en la caja.');
                     }
                 },
             ],
             'cheque' => [
                 function ($attribute, $value, $fail) use ($lastBalance){
-                    if ($value > $lastBalance->system_cheque) {
+                    if ($value > $lastBalance->system_real_cheque) {
                         $fail('No hay suficiente saldo en cheque en la caja.');
                     }
                 },

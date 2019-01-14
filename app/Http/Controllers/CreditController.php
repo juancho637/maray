@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Credit;
 use App\Events\CreditPaymentWasCreated;
+use App\Events\InvoiceWasCreated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -88,22 +89,33 @@ class CreditController extends Controller
         $request['balance_id'] = $lastBalance->id;
         $request['user_id'] = Auth::user()->id;
 
-        //dd($request->all());
+        if(($request->cash + $request->card + $request->cheque) > 0){
+            $payment = $credit->creditPayments()->create($request->all());
 
-        $payment = $credit->creditPayments()->create($request->all());
+            CreditPaymentWasCreated::dispatch(
+                $payment->cash,
+                $payment->cheque,
+                $payment->card,
+                $payment->value
+            );
 
-        CreditPaymentWasCreated::dispatch(
-            $payment->cash,
-            $payment->cheque,
-            $payment->card,
-            $payment->value
-        );
+            if ($credit->purchase_order->type === 'invoice'){
+                InvoiceWasCreated::dispatch(
+                    $payment->cash,
+                    $payment->cheque,
+                    $payment->card,
+                    $payment->value
+                );
+            }
 
-        $credit->update([
-            'outstanding_balance' => ($credit->outstanding_balance - $payment->value)
-        ]);
+            $credit->update([
+                'outstanding_balance' => ($credit->outstanding_balance - $payment->value)
+            ]);
 
-        return redirect()->route('credits.index')->with('flash', 'Pago generado correctamente');
+            return redirect()->route('credits.index')->with('flash', 'Pago generado correctamente');
+        }else{
+            return redirect()->back()->with('warning', 'El pago debe ser mayor a $0');
+        }
     }
 
     /**
