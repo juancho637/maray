@@ -60,7 +60,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <body class="hold-transition skin-blue fixed sidebar-mini"> {{-- sidebar-collapse --}}
     <div class="wrapper" id="app">
-        <!-- Main Header -->
+    <!-- Main Header -->
     @include('admin._layouts.partials.menu')
 
     <!-- Left side column. contains the logo and sidebar -->
@@ -116,6 +116,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="{{ asset('/plugins/jquery/dist/jquery.min.js') }}"></script>
     <!-- Bootstrap 3.3.7 -->
     <script src="{{ asset('/plugins/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <!-- SlimScroll -->
+    <script src="{{ asset('/plugins/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
     <!-- Extra scripts -->
     @stack('scripts')
     <!-- AdminLTE App -->
