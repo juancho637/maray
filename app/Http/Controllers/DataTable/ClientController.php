@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\DataTable;
 
-use App\Balance;
+use App\Client;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Yajra\DataTables\DataTables;
+use Yajra\DataTables\Facades\DataTables;
 
-class BalanceController extends Controller
+class ClientController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,9 +17,17 @@ class BalanceController extends Controller
      */
     public function index()
     {
-        return DataTables::of(Balance::allowed()->with('state', 'user'))
-            ->editColumn('created_at', '{{ $created_at->format("d-m-Y h:i:s A") }}')
-            ->addColumn('actions', 'admin.balances.partials.actions')
+        return DataTables::of(Client::with('state'))
+            ->filterColumn('full_name', function ($query, $keyword) {
+                $query->where('full_name', 'LIKE', '%'.$keyword.'%')
+                    ->orWhereHas('pets', function ($query) use ($keyword) {
+                        $query->where('name', 'LIKE', '%'.$keyword.'%');
+                    });
+            })
+            ->addColumn('actions', 'admin.clients.partials.actions')
+            ->editColumn('identification', function(Client $client) {
+                return $client->type_identification.'. '.$client->identification;
+            })
             ->rawColumns(['actions'])
             ->toJson();
     }
@@ -48,10 +56,10 @@ class BalanceController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Balance  $balance
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Balance $balance)
+    public function show($id)
     {
         //
     }
@@ -59,10 +67,10 @@ class BalanceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Balance  $balance
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Balance $balance)
+    public function edit($id)
     {
         //
     }
@@ -71,10 +79,10 @@ class BalanceController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Balance  $balance
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Balance $balance)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -82,10 +90,10 @@ class BalanceController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Balance  $balance
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Balance $balance)
+    public function destroy($id)
     {
         //
     }

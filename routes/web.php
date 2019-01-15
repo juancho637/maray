@@ -88,16 +88,24 @@ Route::group(['prefix' => 'api', 'middleware' => ['auth']], function () {
 
 //Data Tables
 Route::group(['prefix' => 'datatable', 'middleware' => ['auth']], function () {
-    Route::resource('deposits', 'DataTable\DepositController', ['only'=>['index'], 'as'=>'datatable']);
+    Route::resource('histories', 'DataTable\HistoryController', ['only'=>['index'], 'as'=>'datatable']);
+
     Route::resource('balances', 'DataTable\BalanceController', ['only'=>['index'], 'as'=>'datatable']);
     Route::resource('purchaseOrders', 'DataTable\PurchaseOrderController', ['only'=>['index'], 'as'=>'datatable']);
+    Route::resource('deposits', 'DataTable\DepositController', ['only'=>['index'], 'as'=>'datatable']);
     Route::resource('credits', 'DataTable\CreditController', ['only'=>['index'], 'as'=>'datatable']);
     Route::resource('expenses', 'DataTable\ExpenseController', ['only'=>['index'], 'as'=>'datatable']);
-    Route::resource('expenseTypes', 'DataTable\ExpenseTypeController', ['only'=>['index'], 'as'=>'datatable']);
+
+    Route::resource('species', 'DataTable\SpeciesController', ['only'=>['index'], 'as'=>'datatable']);
+    Route::resource('species.breeds', 'DataTable\SpeciesBreedController', ['only'=>['index'], 'as'=>'datatable']);
+    Route::resource('clients', 'DataTable\ClientController', ['only'=>['index'], 'as'=>'datatable']);
+    Route::resource('clients.pets', 'DataTable\ClientPetController', ['only'=>['index'], 'as'=>'datatable']);
+    Route::resource('providers', 'DataTable\ProviderController', ['only'=>['index'], 'as'=>'datatable']);
     Route::resource('areas', 'DataTable\AreaController', ['only'=>['index'], 'as'=>'datatable']);
     Route::resource('areas.categories', 'DataTable\AreaCategoryController', ['only'=>['index'], 'as'=>'datatable']);
-    Route::resource('histories', 'DataTable\HistoryController', ['only'=>['index'], 'as'=>'datatable']);
     Route::resource('products', 'DataTable\ProductController', ['only'=>['index'], 'as'=>'datatable']);
+    Route::resource('expenseTypes', 'DataTable\ExpenseTypeController', ['only'=>['index'], 'as'=>'datatable']);
+    Route::resource('users', 'DataTable\UserController', ['only'=>['index'], 'as'=>'datatable']);
 });
 
 

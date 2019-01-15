@@ -7,7 +7,8 @@
 @section('description', 'Página para gestión de proveedores')
 
 @push('styles')
-
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('/plugins/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
 @endpush
 
 @section('content')
@@ -21,52 +22,55 @@
             </div>
         </div>
         <div class="box-body">
-            <table id="providers-table" class="table table-striped">
+            <table id="providers" class="table table-striped">
                 <thead>
                     <tr>
+                        <th>Id</th>
                         <th>Nombre</th>
                         <th>Descripción</th>
                         <th>Estado</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
-                <tbody>
-                    @foreach($providers as $provider)
-                        <tr>
-                            <td>{{ $provider->name }}</td>
-                            <td>{{ $provider->description }}</td>
-                            <td>{{ $provider->state->name }}</td>
-                            @if(isset($provider->deleted_at))
-                                <td>
-                                    <a href="#" class="btn btn-xs btn-info">Restaurar usuario</a>
-                                </td>
-                            @else
-                                <td>
-                                    <a href="{{ route('providers.edit', $provider) }}" class="btn btn-xs btn-warning"><i class="fa fa-pencil"></i></a>
-                                    <form method="POST" action="{{ route('providers.destroy', $provider) }}" style="display: inline">
-                                        {{ csrf_field() }}
-                                        {{ method_field('DELETE') }}
-                                        <button type="submit"
-                                                onclick="return confirm('¿Estas seguro de querer eliminar este proveedor?')"
-                                                class="btn btn-xs btn-danger">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                    </form>
-                                </td>
-                            @endif
-                        </tr>
-                    @endforeach
-                </tbody>
             </table>
         </div>
-        <center>{{ $providers->links() }}</center>
     </div>
 @endsection
 
 @push('scripts')
+    <!-- DataTables -->
+    <script src="{{ asset('/plugins/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/plugins/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
+
     <script>
         $(function () {
-
+            $('#providers').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: "{{ route('datatable.providers.index') }}",
+                columns: [
+                    {data: 'id'},
+                    {data: 'name'},
+                    {data: 'description'},
+                    {data: 'state.name'},
+                    {data: 'actions'}
+                ],
+                "language": {
+                    "info": "_TOTAL_ registros",
+                    "search": "Buscar",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "paginate": {
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "emptyTable": "No hay datos",
+                    "zeroRecords": "No hay coinsidencias",
+                    "infoEmpty": "",
+                    "infoFiltered": ""
+                }
+            });
         });
     </script>
 @endpush

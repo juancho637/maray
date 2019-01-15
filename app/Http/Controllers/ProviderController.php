@@ -16,9 +16,7 @@ class ProviderController extends Controller
      */
     public function index()
     {
-        $providers = Provider::withTrashed()->paginate(15);
-
-        return view('admin.providers.index', compact('providers'));
+        return view('admin.providers.index');
     }
 
     /**

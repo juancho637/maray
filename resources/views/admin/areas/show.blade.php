@@ -67,7 +67,7 @@
 
     <script>
         $(function () {
-            $('#categories  ').DataTable({
+            $('#categories').DataTable({
                 processing: true,
                 serverSide: true,
                 ajax: "{{ route('datatable.areas.categories.index', $area) }}",
@@ -81,6 +81,7 @@
                 "language": {
                     "info": "_TOTAL_ registros",
                     "search": "Buscar",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
                     "paginate": {
                         "next": "Siguiente",
                         "previous": "Anterior"

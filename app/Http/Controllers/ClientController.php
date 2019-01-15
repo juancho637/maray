@@ -18,9 +18,7 @@ class ClientController extends Controller
      */
     public function index(Request $request)
     {
-        $clients = Client::fullName($request->search)->identification($request->search)->petName($request->search)->withTrashed()->paginate(15);
-
-        return view('admin.clients.index', compact('clients'));
+        return view('admin.clients.index');
     }
 
     /**

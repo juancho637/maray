@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{{ asset('/plugins/select2/dist/css/select2.min.css') }}">
     <!-- bootstrap datepicker -->
     <link rel="stylesheet" href="{{ asset('/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('/plugins/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
 @endpush
 
 @section('content')
@@ -107,9 +109,10 @@
                 </div>
             </div>
             <div class="box-body table-responsive">
-                <table class="table table-striped">
+                <table id="pets" class="table table-striped">
                     <thead>
                         <tr>
+                            <th>Id</th>
                             <th>Nombre</th>
                             <th>Sexo</th>
                             <th>Peso</th>
@@ -121,44 +124,6 @@
                             <th>Acciones</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        @foreach($client->pets as $pet)
-                            <tr>
-                                <td>{{ $pet->name }}</td>
-                                <td>
-                                    @if($pet->gender == 'M')
-                                        Macho
-                                    @else
-                                        Hembra
-                                    @endif
-                                </td>
-                                <td>{{ $pet->weight }} Kg</td>
-                                <td>{{ $pet->birth_date }}</td>
-                                <td>{{ $pet->reproductive_status }}</td>
-                                <td>{{ $pet->breed->species->name }}</td>
-                                <td>{{ $pet->breed->name }}</td>
-                                <td>{{ $pet->state->name }}</td>
-                                @if(isset($pet->deleted_at))
-                                    <td>
-                                        <a href="#" class="btn btn-xs btn-info">Restaurar mascota</a>
-                                    </td>
-                                @else
-                                    <td>
-                                        <a href="{{ route('clients.pets.edit', [$client, $pet]) }}" class="btn btn-xs btn-warning"><i class="fa fa-pencil"></i></a>
-                                        <form method="POST" action="{{ route('clients.pets.destroy', [$pet->client, $pet]) }}" style="display: inline">
-                                            {{ csrf_field() }}
-                                            {{ method_field('DELETE') }}
-                                            <button type="submit"
-                                                    onclick="return confirm('¿Estas seguro de querer eliminar esta mascota?')"
-                                                    class="btn btn-xs btn-danger">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </form>
-                                    </td>
-                                @endif
-                            </tr>
-                        @endforeach
-                    </tbody>
                 </table>
             </div>
         </div>
@@ -174,6 +139,9 @@
     <!-- bootstrap datepicker -->
     <script src="{{ asset('/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}" charset="UTF-8"></script>
     <script src="{{ asset('/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js') }}"></script>
+    <!-- DataTables -->
+    <script src="{{ asset('/plugins/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/plugins/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
 
     <script>
         $(function () {
@@ -188,6 +156,39 @@
                 autoclose: true,
                 language: 'es',
                 format: 'yyyy-mm-dd'
+            });
+
+            $('#pets').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: "{{ route('datatable.clients.pets.index', $client) }}",
+                columns: [
+                    {data: 'id'},
+                    {data: 'name'},
+                    {data: 'gender'},
+                    {data: 'weight'},
+                    {data: 'birth_date'},
+                    {data: 'reproductive_status'},
+                    {data: 'breed.species.name'},
+                    {data: 'breed.name'},
+                    {data: 'state.name'},
+                    {data: 'actions'}
+                ],
+                "language": {
+                    "info": "_TOTAL_ registros",
+                    "search": "Buscar",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "paginate": {
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "emptyTable": "No hay datos",
+                    "zeroRecords": "No hay coinsidencias",
+                    "infoEmpty": "",
+                    "infoFiltered": ""
+                }
             });
         });
     </script>

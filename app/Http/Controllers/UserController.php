@@ -27,9 +27,7 @@ class UserController extends Controller
             return response()->json(['users' => $users], 200);
         }
 
-        $users = User::withTrashed()->paginate(15);
-
-        return view('admin.users.index', compact('users'));
+        return view('admin.users.index');
     }
 
     /**

@@ -6,6 +6,11 @@
 
 @section('description', 'Visualizar especie')
 
+@push('styles')
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('/plugins/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
+@endpush
+
 @section('content')
     <div class="box box-primary">
         <div class="box-body">
@@ -41,43 +46,55 @@
             </div>
         </div>
         <div class="box-body table-responsive">
-            <table class="table table-striped">
+            <table id="breeds" class="table table-striped">
                 <thead>
                 <tr>
+                    <th>Id</th>
                     <th>Nombre</th>
                     <th>Descripción</th>
                     <th>Estado</th>
                     <th>Acciones</th>
                 </tr>
                 </thead>
-                <tbody>
-                @foreach($species->breeds as $breed)
-                    <tr>
-                        <td>{{ $breed->name }}</td>
-                        <td>{{ $breed->description }}</td>
-                        <td>{{ $breed->state->name }}</td>
-                        @if(isset($breed->deleted_at))
-                            <td>
-                                <a href="#" class="btn btn-xs btn-info">Restaurar raza</a>
-                            </td>
-                        @else
-                            <td>
-                                <a href="{{ route('species.breeds.edit', [$species, $breed]) }}" class="btn btn-xs btn-warning"><i class="fa fa-pencil"></i></a>
-                                <form method="POST" action="{{ route('species.breeds.destroy', [$species, $breed]) }}" style="display: inline">
-                                    {{ csrf_field() }}
-                                    {{ method_field('DELETE') }}
-                                    <button type="submit"
-                                            onclick="return confirm('¿Estas seguro de querer eliminar esta raza?')"
-                                            class="btn btn-xs btn-danger">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                                </form>
-                            </td>
-                        @endif
-                    </tr>
-                @endforeach
-                </tbody>
             </table>
         </div>
     </div>
 @endsection
+
+@push('scripts')
+    <!-- DataTables -->
+    <script src="{{ asset('/plugins/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/plugins/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
+
+    <script>
+        $(function () {
+            $('#breeds').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: "{{ route('datatable.species.breeds.index', $species) }}",
+                columns: [
+                    {data: 'id'},
+                    {data: 'name'},
+                    {data: 'description'},
+                    {data: 'state.name'},
+                    {data: 'actions'}
+                ],
+                "language": {
+                    "info": "_TOTAL_ registros",
+                    "search": "Buscar",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "paginate": {
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "emptyTable": "No hay datos",
+                    "zeroRecords": "No hay coinsidencias",
+                    "infoEmpty": "",
+                    "infoFiltered": ""
+                }
+            });
+        });
+    </script>
+@endpush

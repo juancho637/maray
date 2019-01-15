@@ -16,9 +16,7 @@ class SpeciesController extends Controller
      */
     public function index()
     {
-        $species = Species::withTrashed()->paginate(15);
-
-        return view('admin.species.index', compact('species'));
+        return view('admin.species.index');
     }
 
     /**

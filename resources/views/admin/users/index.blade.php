@@ -7,7 +7,8 @@
 @section('description', 'Página para gestión de usuarios')
 
 @push('styles')
-
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('/plugins/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
 @endpush
 
 @section('content')
@@ -22,9 +23,10 @@
         </div>
         <!-- /.box-header -->
         <div class="box-body table-responsive">
-            <table id="users-table" class="table table-striped">
+            <table id="users" class="table table-striped">
                 <thead>
                     <tr>
+                        <th>Id</th>
                         <th>Nombres</th>
                         <th>Cédula</th>
                         <th>Cargo</th>
@@ -34,43 +36,48 @@
                         <th>Acciones</th>
                     </tr>
                 </thead>
-                <tbody>
-                    @foreach($users as $user)
-                        <tr>
-                            <td>{{ $user->full_name }}</td>
-                            <td>{{ $user->identification }}</td>
-                            <td>{{ $user->occupation->name }}</td>
-                            <td>{{ $user->email }}</td>
-                            <td>{{ $user->cell_phone }}</td>
-                            <td>{{ $user->state->name }}</td>
-                            @if(isset($user->deleted_at))
-                                <td>
-                                    <a href="#" class="btn btn-xs btn-info">Restaurar usuario</a>
-                                </td>
-                            @else
-                                <td>
-                                    <a href="{{ route('users.show', $user) }}" class="btn btn-xs btn-info"><i class="fa fa-eye"></i></a>
-                                    <a href="{{ route('users.edit', $user) }}" class="btn btn-xs btn-warning"><i class="fa fa-pencil"></i></a>
-                                    <form method="POST" action="{{ route('users.destroy', $user) }}" style="display: inline">
-                                        {{ csrf_field() }}
-                                        {{ method_field('DELETE') }}
-                                        <button type="submit" onclick="return confirm('¿Estas seguro de querer eliminar este usuario?')" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></button>
-                                    </form>
-                                </td>
-                            @endif
-                        </tr>
-                    @endforeach
-                </tbody>
             </table>
         </div>
-        <center>{{ $users->links() }}</center>
     </div>
 @endsection
 
 @push('scripts')
+    <!-- DataTables -->
+    <script src="{{ asset('/plugins/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/plugins/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
+
     <script>
         $(function () {
-
+            $('#users').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: "{{ route('datatable.users.index') }}",
+                columns: [
+                    {data: 'id'},
+                    {data: 'full_name'},
+                    {data: 'identification'},
+                    {data: 'occupation.name'},
+                    {data: 'email'},
+                    {data: 'cell_phone'},
+                    {data: 'state.name'},
+                    {data: 'actions'}
+                ],
+                "language": {
+                    "info": "_TOTAL_ registros",
+                    "search": "Buscar",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "paginate": {
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "emptyTable": "No hay datos",
+                    "zeroRecords": "No hay coinsidencias",
+                    "infoEmpty": "",
+                    "infoFiltered": ""
+                }
+            });
         });
     </script>
 @endpush

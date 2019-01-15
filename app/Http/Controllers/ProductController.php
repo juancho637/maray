@@ -19,10 +19,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-
-        $products = Product::withTrashed()->paginate(15);
-
-        return view('admin.products.index', compact('products'));
+        return view('admin.products.index');
     }
 
     /**

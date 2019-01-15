@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * @property int state_id
+ * @property mixed weight
+ * @property mixed gender
+ * @property mixed reproductive_status
  */
 class Pet extends Model
 {
