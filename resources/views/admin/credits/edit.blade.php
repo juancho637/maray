@@ -15,25 +15,25 @@
     <div class="box box-primary">
         <div class="box-body">
             <div class="row">
-                <div class="col-xs-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="form-group">
                         <label>Cliente:</label>
                         <input value="{{ $credit->purchase_order->client->full_name }}" type="text" class="form-control" disabled>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="form-group">
                         <label>Valor total:</label>
                         <input value="${{ $credit->value }}" type="text" class="form-control" disabled>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="form-group">
                         <label>Valor pendiente:</label>
                         <input value="${{ $credit->outstanding_balance }}" type="text" class="form-control" disabled>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="form-group">
                         <label>Orden / Factura:</label>
                         <input value="{{ $credit->purchase_order->spanishType($credit->purchase_order->type) }} #{{ $credit->purchase_order_id }}" type="text" class="form-control" disabled>
@@ -44,31 +44,31 @@
                 {{ csrf_field() }}
                 {{ method_field('PUT') }}
                 <div class="row">
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-sm-4">
                         <div class="form-group">
                             <label>Efectivo:</label>
                             <input type="number" value="{{ old('cash') }}" id="cash" name="cash" class="form-control"/>
                         </div>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-sm-4">
                         <div class="form-group">
                             <label>Cheque:</label>
                             <input type="number" value="{{ old('cheque') }}" id="cheque" name="cheque" class="form-control"/>
                         </div>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-sm-4">
                         <div class="form-group">
                             <label>Tarjeta:</label>
                             <input type="number" value="{{ old('card') }}" id="card" name="card" class="form-control"/>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6">
+                    <div class="col-xs-12 col-sm-6">
                         <div class="form-group">
                             <label>Saldo pendiente:</label>
                             <input type="text" id="outstandingBalance" name="outstandingBalance" class="form-control" readonly/>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6">
+                    <div class="col-xs-12 col-sm-6">
                         <div class="form-group {{ $errors->has('positiveBalance') ? 'has-error' : '' }}">
                             <label>Saldo a favor:</label>
                             <input type="text" id="positiveBalance" name="positiveBalance" class="form-control" readonly/>

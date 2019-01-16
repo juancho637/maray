@@ -19,19 +19,19 @@
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-lg-6">
                         <div class="form-group">
                             <label for="name">Nombre completo:</label>
                             <input value="{{ $client->full_name }}" type="text" class="form-control" disabled>
                         </div>
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
                         <div class="form-group">
                             <label>Tipo de identificación:</label>
                             <input value="{{ $client->type_identification === 'CC' ? 'Cédula de ciudadania' : (($client->type_identification === 'CE') ? 'Cédula extranjera' : 'Tarjeta de identidad') }}" type="text" class="form-control" disabled>
                         </div>
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
                         <div class="form-group">
                             <label>Numero de identificación:</label>
                             <input value="{{ $client->identification }}" type="number" class="form-control" disabled>
@@ -39,19 +39,19 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
                         <div class="form-group">
                             <label>Género:</label>
                             <input value="{{ $client->gender === 'M' ? 'Masculino' : 'Femenino'}}" type="text" class="form-control" disabled>
                         </div>
                     </div>
-                    <div class="col-xs-5">
+                    <div class="col-xs-12 col-sm-6 col-lg-5">
                         <div class="form-group">
                             <label for="address">Dirección:</label>
                             <input value="{{ $client->address }}" type="text" class="form-control" disabled>
                         </div>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-lg-4">
                         <div class="form-group">
                             <label for="email">Correo electrónico:</label>
                             <input value="{{ $client->email }}" type="email" class="form-control" disabled>
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-lg-4">
                         <div class="form-group">
                             <label for="birth_date">Fecha de nacimiento:</label>
                             <div class="input-group date">
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
                         <div class="form-group">
                             <label for="cell_phone">Celular:</label>
                             <div class="input-group">
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
                         <div class="form-group">
                             <label>Telefono:</label>
                             <div class="input-group">

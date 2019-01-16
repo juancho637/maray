@@ -18,46 +18,46 @@
             <form action="{{ route('deposits.store') }}" method="post">
                 {{ csrf_field() }}
                 <div class="row">
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
                         <div class="form-group">
                             <label>Fecha depósito:</label>
                             <input type="text" name="date" value="{{ \Carbon\Carbon::now()->format('d-m-Y') }}" class="form-control" disabled/>
                         </div>
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
                         <div class="form-group {{ $errors->has('client_id') ? 'has-error' : '' }}">
                             <label for="client_id">Cliente:</label>
                             <select name="client_id" id="client_id" class="form-control" style="width: 100%;"></select>
                             {!! $errors->first('client_id', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
                         <div class="form-group">
                             <label>Identificación:</label>
                             <input type="text" id="identification" class="form-control" disabled/>
                         </div>
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
                         <div class="form-group">
                             <label>Usuario:</label>
                             <input type="text" id="identification" value="{{ \Illuminate\Support\Facades\Auth::user()->full_name }}" class="form-control" disabled/>
                         </div>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="form-group {{ $errors->has('cash') ? 'has-error' : '' }}">
                             <label for="cash">Efectivo:</label>
                             <input type="number" id="cash" name="cash" class="form-control"/>
                             {!! $errors->first('cash', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="form-group {{ $errors->has('cheque') ? 'has-error' : '' }}">
                             <label for="cheque">Cheque:</label>
                             <input type="number" id="cheque" name="cheque" class="form-control"/>
                             {!! $errors->first('cheque', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="form-group {{ $errors->has('card') ? 'has-error' : '' }}">
                             <label for="card">Tarjeta:</label>
                             <input type="number" id="card" name="card" class="form-control"/>

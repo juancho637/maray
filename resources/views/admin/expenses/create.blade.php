@@ -37,21 +37,21 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="form-group {{ $errors->has('cash') ? 'has-error' : '' }}">
                             <label>Efectivo:</label>
                             <input type="number" min="0" name="cash" value="{{ old('cash') }}" class="form-control"/>
                             {!! $errors->first('cash', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="form-group {{ $errors->has('card') ? 'has-error' : '' }}">
                             <label>Tarjeta:</label>
                             <input type="number" min="0" name="card" value="{{ old('card') }}" class="form-control"/>
                             {!! $errors->first('card', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="form-group {{ $errors->has('cheque') ? 'has-error' : '' }}">
                             <label>Cheque:</label>
                             <input type="number" min="0" name="cheque" value="{{ old('cheque') }}" class="form-control"/>

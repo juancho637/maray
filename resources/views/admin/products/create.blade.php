@@ -19,28 +19,28 @@
                 <div class="box box-primary">
                     <div class="box-body">
                         <div class="row">
-                            <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                                     <label for="name">Nombre:</label>
                                     <input value="{{ old('name') }}" type="text" class="form-control" name="name" id="name" placeholder="Nombre del producto/servicio">
                                     {!! $errors->first('name', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="form-group {{ $errors->has('value') ? 'has-error' : '' }}">
                                     <label for="value">Precio:</label>
                                     <input value="{{ old('value') }}" type="number" min="0" class="form-control" name="value" id="value" placeholder="Precio del producto/servicio ($)">
                                     {!! $errors->first('value', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="form-group {{ $errors->has('tax_percentage') ? 'has-error' : '' }}">
                                     <label for="tax_percentage">Porcentaje de impuestos:</label>
                                     <input value="{{ old('tax_percentage') }}" type="number" min="0" max="100" class="form-control" name="tax_percentage" id="tax_percentage" placeholder="Porcentaje de impuestos (%)">
                                     {!! $errors->first('tax_percentage', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="form-group {{ $errors->has('type') ? 'has-error' : '' }}">
                                     <label for="type">Tipo:</label>
                                     <select name="type" id="type" class="form-control select2" style="width: 100%;">
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-6 col-sm-3">
+                            <div class="col-xs-12 col-sm-6 col-lg-3">
                                 <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
                                     <label for="category_id">Área:</label>
                                     <select class="form-control select2" name="category_id" id="category_id" data-placeholder="Seleccione una categoría"
@@ -65,7 +65,7 @@
                                     {!! $errors->first('category_id', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-3">
+                            <div class="col-xs-12 col-sm-6 col-lg-3">
                                 <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
                                     <label for="category_id">Categoría: (aun no esta)</label>
                                     <select class="form-control select2" name="category_id" id="category_id" data-placeholder="Seleccione una categoría"
@@ -75,7 +75,7 @@
                                     {!! $errors->first('category_id', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-12 col-lg-6">
                                 <div class="form-group {{ $errors->has('providers') ? 'has-error' : '' }}">
                                     <label for="description">Proveedores:</label>
                                     <select class="form-control select2" multiple="multiple" name="providers[]" id="providers" data-placeholder="Seleccione por lo menos un proveedor"
@@ -96,10 +96,10 @@
                                     {!! $errors->first('description', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-block">Guardar producto/servicio</button>
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Guardar producto/servicio</button>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -16,25 +16,25 @@
         {{ csrf_field() }}
         {{ method_field('PUT') }}
         <div class="row">
-            <div class="col-sm-8 col-xs-12">
+            <div class="col-lg-8 col-xs-12">
                 <div class="box box-primary">
                     <div class="box-body">
                         <div class="row">
-                            <div class="col-xs-4">
+                            <div class="col-xs-12 col-sm-6 col-md-4">
                                 <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                                     <label for="name">Nombres:</label>
                                     <input value="{{ old('name', $user->name) }}" type="text" class="form-control" name="name" id="name" placeholder="Nombres">
                                     {!! $errors->first('name', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-xs-12 col-sm-6 col-md-4">
                                 <div class="form-group {{ $errors->has('last_name') ? 'has-error' : '' }}">
                                     <label for="last_name">Apellidos:</label>
                                     <input value="{{ old('last_name', $user->last_name) }}" type="text" class="form-control" name="last_name" id="last_name" placeholder="Apellidos">
                                     {!! $errors->first('last_name', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-sm-12 col-md-4">
                                 <div class="form-group {{ $errors->has('identification') ? 'has-error' : '' }}">
                                     <label for="identification">Cédula:</label>
                                     <input value="{{ old('identification', $user->identification) }}" type="number" class="form-control" name="identification" id="identification" placeholder="Cédula">
@@ -43,14 +43,14 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-6">
+                            <div class="col-xs-12 col-md-6">
                                 <div class="form-group {{ $errors->has('address') ? 'has-error' : '' }}">
                                     <label for="address">Dirección:</label>
                                     <input value="{{ old('address', $user->address) }}" type="text" class="form-control" name="address" id="address" placeholder="Dirección">
                                     {!! $errors->first('address', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-12 col-md-6">
                                 <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
                                     <label for="email">Correo electrónico:</label>
                                     <input value="{{ old('email', $user->email) }}" type="text" class="form-control" name="email" id="email" placeholder="Correo electrónico">
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="form-group {{ $errors->has('cell_phone') ? 'has-error' : '' }}">
                                     <label for="cell_phone">Celular:</label>
                                     <div class="input-group">
@@ -71,7 +71,7 @@
                                     {!! $errors->first('cell_phone', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="phone">Telefono:</label>
                                     <div class="input-group">
@@ -85,21 +85,21 @@
                         </div>
                         @if($user->id === Auth::user()->id)
                             <div class="row">
-                                <div class="col-xs-4">
+                                <div class="col-xs-12 col-md-4">
                                     <div class="form-group {{ $errors->has('old_password') ? 'has-error' : '' }}">
                                         <label for="name">Antigua contraseña:</label>
                                         <input type="password" class="form-control" name="old_password" id="old_password" placeholder="Antigua contraseña">
                                         {!! $errors->first('old_password', '<span class="help-block">:message</span>') !!}
                                     </div>
                                 </div>
-                                <div class="col-xs-4">
+                                <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="form-group {{ $errors->has('password') ? 'has-error' : '' }}">
                                         <label for="password">Nueva contraseña:</label>
                                         <input type="password" class="form-control" name="password" id="password" placeholder="Nueva contraseña">
                                         {!! $errors->first('password', '<span class="help-block">:message</span>') !!}
                                     </div>
                                 </div>
-                                <div class="col-xs-4">
+                                <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="form-group {{ $errors->has('password_confirmation') ? 'has-error' : '' }}">
                                         <label for="identification">Confirmación de contraseña:</label>
                                         <input type="password" class="form-control" name="password_confirmation" id="password_confirmation" placeholder="Confirmación de contraseña">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-lg-4 col-xs-12">
                 <div class="box box-primary">
                     <div class="box-body">
                         <div class="row">

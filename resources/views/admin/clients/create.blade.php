@@ -21,7 +21,7 @@
                 <div class="box box-primary">
                     <div class="box-body">
                         <div class="row">
-                            <div class="col-xs-6">
+                            <div class="col-xs-12 col-lg-6">
                                 <div class="form-group {{ $errors->has('full_name') ? 'has-error' : '' }}">
                                     <label for="full_name">Nombre completo:</label>
                                     <input value="{{ old('full_name') }}" type="text" class="form-control" name="full_name" id="full_name" placeholder="Nombre completo">
@@ -35,7 +35,7 @@
                                     {!! $errors->first('last_name', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div> --}}
-                            <div class="col-xs-3">
+                            <div class="col-xs-12 col-sm-6 col-lg-3">
                                 <div class="form-group {{ $errors->has('type_identification') ? 'has-error' : '' }}">
                                     <label for="type_identification">Tipo de identificación:</label>
                                     <select name="type_identification" id="type_identification" class="form-control select2" style="width: 100%;">
@@ -47,7 +47,7 @@
                                     {!! $errors->first('type_identification', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-xs-3">
+                            <div class="col-xs-12 col-sm-6 col-lg-3">
                                 <div class="form-group {{ $errors->has('identification') ? 'has-error' : '' }}">
                                     <label for="identification">Numero de identificación:</label>
                                     <input value="{{ old('identification') }}" type="number" class="form-control" name="identification" id="identification" placeholder="Número de identificación">
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-3">
+                            <div class="col-xs-12 col-sm-6 col-lg-3">
                                 <div class="form-group {{ $errors->has('gender') ? 'has-error' : '' }}">
                                     <label for="gender">Género:</label>
                                     <select name="gender" id="gender" class="form-control select2" style="width: 100%;">
@@ -67,14 +67,14 @@
                                     {!! $errors->first('gender', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-xs-5">
+                            <div class="col-xs-12 col-sm-6 col-lg-5">
                                 <div class="form-group {{ $errors->has('address') ? 'has-error' : '' }}">
                                     <label for="address">Dirección:</label>
                                     <input value="{{ old('address') }}" type="text" class="form-control" name="address" id="address" placeholder="Dirección">
                                     {!! $errors->first('address', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-xs-12 col-lg-4">
                                 <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
                                     <label for="email">Correo electrónico:</label>
                                     <input value="{{ old('email') }}" type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico">
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-4">
+                            <div class="col-xs-12 col-lg-4">
                                 <div class="form-group {{ $errors->has('birth_date') ? 'has-error' : '' }}">
                                     <label for="birth_date">Fecha de nacimiento:</label>
                                     <div class="input-group date">
@@ -95,7 +95,7 @@
                                     {!! $errors->first('birth_date', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
                                 <div class="form-group {{ $errors->has('cell_phone') ? 'has-error' : '' }}">
                                     <label for="cell_phone">Celular:</label>
                                     <div class="input-group">
@@ -107,7 +107,7 @@
                                     {!! $errors->first('cell_phone', '<span class="help-block">:message</span>') !!}
                                 </div>
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
                                 <div class="form-group">
                                     <label for="phone">Telefono:</label>
                                     <div class="input-group">

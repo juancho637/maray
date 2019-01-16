@@ -13,23 +13,23 @@
 
 @section('content')
     <div class="row">
-        <div class="col-sm-8 col-xs-12">
+        <div class="col-lg-8 col-xs-12">
             <div class="box box-primary">
                 <div class="box-body">
                     <div class="row">
-                        <div class="col-xs-4">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="form-group">
                                 <label for="name">Nombres:</label>
                                 <input value="{{ $user->name }}" type="text" class="form-control" disabled>
                             </div>
                         </div>
-                        <div class="col-xs-4">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="form-group">
                                 <label for="last_name">Apellidos:</label>
                                 <input value="{{ $user->last_name }}" type="text" class="form-control" disabled>
                             </div>
                         </div>
-                        <div class="col-xs-4">
+                        <div class="col-sm-12 col-md-4">
                             <div class="form-group">
                                 <label for="identification">Cédula:</label>
                                 <input value="{{ $user->identification }}" type="number" class="form-control" disabled>
@@ -37,13 +37,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-6">
+                        <div class="col-xs-12 col-md-6">
                             <div class="form-group">
                                 <label for="address">Dirección:</label>
                                 <input value="{{ $user->address }}" type="text" class="form-control" disabled>
                             </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-xs-12 col-md-6">
                             <div class="form-group">
                                 <label>Correo electrónico:</label>
                                 <input value="{{ $user->email }}" type="text" class="form-control" disabled>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-6">
+                        <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label>Celular:</label>
                                 <div class="input-group">
@@ -62,7 +62,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label>Telefono:</label>
                                 <div class="input-group">
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-lg-4 col-xs-12">
             <div class="box box-primary">
                 <div class="box-body">
                     <div class="row">

@@ -254,28 +254,28 @@
                 {{ csrf_field() }}
                 {{ method_field('PUT') }}
                 <div class="row">
-                    <div class="col-xs-12 col-sm-3">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
                         <div class="form-group {{ $errors->has('manual_invoice_cash') ? 'has-error' : '' }}">
                             <label for="manual_invoice_cash">*Efectivo (factura):</label>
                             <input value="{{ old('manual_invoice_cash') }}" type="number" class="form-control" name="manual_invoice_cash" id="manual_invoice_cash">
                             {!! $errors->first('manual_invoice_cash', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-3">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
                         <div class="form-group {{ $errors->has('manual_invoice_cheque') ? 'has-error' : '' }}">
                             <label for="manual_invoice_cheque">*Cheque (factura):</label>
                             <input value="{{ old('manual_invoice_cheque') }}" type="number" class="form-control" name="manual_invoice_cheque" id="manual_invoice_cheque">
                             {!! $errors->first('manual_invoice_cheque', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-3">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
                         <div class="form-group {{ $errors->has('manual_invoice_card') ? 'has-error' : '' }}">
                             <label for="manual_invoice_card">*Tarjeta (factura):</label>
                             <input value="{{ old('manual_invoice_card') }}" type="number" class="form-control" name="manual_invoice_card" id="manual_invoice_card">
                             {!! $errors->first('manual_invoice_card', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-3">
+                    <div class="col-xs-12 col-md-3">
                         <div class="form-group {{ $errors->has('manual_invoice_total') ? 'has-error' : '' }}">
                             <label for="manual_invoice_total">Total (factura):</label>
                             <input value="{{ old('manual_invoice_total') }}" type="number" class="form-control" name="manual_invoice_total" id="manual_invoice_total" readonly>
@@ -307,21 +307,21 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="form-group {{ $errors->has('manual_expenditure') ? 'has-error' : '' }}">
                             <label for="manual_expenditure">*Gastos y devoluciones:</label>
                             <input value="{{ old('manual_expenditure') }}" type="number" class="form-control" name="manual_expenditure" id="manual_expenditure">
                             {!! $errors->first('manual_expenditure', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="form-group {{ $errors->has('manual_total') ? 'has-error' : '' }}">
                             <label for="manual_total">Dinero total:</label>
                             <input value="{{ old('manual_total') }}" type="number" class="form-control" name="manual_total" id="manual_total" readonly>
                             {!! $errors->first('manual_total', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="form-group {{ $errors->has('delivery_balance_to') ? 'has-error' : '' }}">
                             <label for="delivery_balance_to">Entrega de caja a:</label>
                             <select name="delivery_balance_to" id="gender" class="form-control select2" style="width: 100%;">

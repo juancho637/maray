@@ -15,25 +15,25 @@
     <div class="box box-primary">
         <div class="box-body">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="name">Nombre:</label>
                         <input value="{{ $product->name }}" class="form-control" disabled>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="value">Precio:</label>
                         <input value="{{ $product->value }}" class="form-control" disabled>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label>Porcentaje de impuestos:</label>
                         <input value="{{ $product->tax_percentage }}" class="form-control" disabled>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label>Tipo:</label>
                         <input value="{{ $product->type === 'producto' ? 'Producto' : 'Servicio' }}" class="form-control" disabled>
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
                     <div class="form-group">
                         <label>Categorías:</label>
                         <select class="form-control select2" style="width: 100%;" disabled>
@@ -49,7 +49,15 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="form-group">
+                        <label for="category_id">Categoría: (aun no esta)</label>
+                        <select class="form-control select2" style="width: 100%;" disabled>
+                            <option>categoría</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-lg-6">
                     <div class="form-group">
                         <label>Proveedores:</label>
                         <select class="form-control select2" multiple="multiple" style="width: 100%;" disabled>
@@ -67,10 +75,10 @@
                         <textarea class="form-control" disabled>{{ $product->description }}</textarea>
                     </div>
                 </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="form-group">
-                    <a href="{{ route('products.edit', $product) }}" class="btn btn-warning btn-block">Editar producto/servicio</a>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <a href="{{ route('products.edit', $product) }}" class="btn btn-warning btn-block">Editar producto/servicio</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -44,7 +44,7 @@
                 </a>
             </div>
         </div>
-        <div class="box-body">
+        <div class="box-body table-responsive">
             <table id="categories" class="table table-striped" style="width:100%">
                 <thead>
                 <tr>
