@@ -1,0 +1,21 @@
+version: "3"
+services: 
+  app:
+    image: "scriptf/laravel:php7.2-apache"
+    ports: 
+      - "8000:80"
+    volumes:
+      - ./:/var/www/html
+    links:
+      - mysql:mysql
+      
+  mysql:
+    image: "mysql:8.0.13"
+    command: --default-authentication-plugin=mysql_native_password
+    environment: 
+      MYSQL_DATABASE: maray
+      MYSQL_ROOT_PASSWORD: root
+    ports: 
+      - "3337:3306"
+    volumes:
+      - ./mysql-data:/var/lib/mysql

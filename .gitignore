@@ -7,6 +7,9 @@ bootstrap/compiled.php
 app/storage/
 composer.lock
 
+# Mysql Docker
+mysql-data/
+
 # Laravel 5 & Lumen specific
 public/storage
 public/hot
