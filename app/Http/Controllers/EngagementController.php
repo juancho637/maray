@@ -124,7 +124,7 @@ class EngagementController extends Controller
                     ->pluck('detailEngagements')
                     ->collapse()
                     ->max('assigned_shift');
-                if($serviceFields['add']){
+                if(isset($serviceFields['add'])){
                     $serviceFields['description'] .= ' Servicios adicionales: ';
                     foreach ($serviceFields['add'] as $additional){
                         if ($additional === end($serviceFields['add'])) {

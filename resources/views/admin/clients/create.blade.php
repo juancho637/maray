@@ -148,14 +148,14 @@
             $('[data-mask]').inputmask();
 
             //Initialize Select2 Elements
-            $('.select2').select2()
+            $('.select2').select2();
 
             //Date picker
             $('#datepicker').datepicker({
                 autoclose: true,
                 language: 'es',
                 format: 'yyyy-mm-dd'
-            })
+            });
         });
     </script>
 @endpush
